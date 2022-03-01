@@ -13,9 +13,9 @@ const NavigationStyled = styled.nav`
     width: 100%;
     border-bottom: 1px solid var(--border-color);
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
     img {
-      width: 80%;
+      width: 70%;
       border-radius: 50%;
       border: 8px solid var(--border-color);
     }
@@ -28,7 +28,38 @@ const NavigationStyled = styled.nav`
       display: block;
       a {
         display: block;
+        padding: 1rem 0;
+        position: relative;
+        &:hover {
+          cursor: pointer;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 50%;
+          background-color: var(--primary-color);
+          opacity: 0.21;
+          transition: All 0.4s cubic-bezier(1, -0.2, 0.25, 0.95);
+        }
       }
+      a:hover::before {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .footer {
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+    p {
+      padding: 2rem 0;
+      font-size: 1.1rem;
+      display: block;
+      text-align: center;
     }
   }
 `;
