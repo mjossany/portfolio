@@ -1,11 +1,9 @@
-import Sidebar from './components/Sidebar';
+import styled from 'styled-components';
 
 function App() {
-  return (
-    <div>
-      <Sidebar />
-    </div>
-  );
+  return <AppStyle>Style Components</AppStyle>;
 }
+
+const AppStyle = styled.div``;
 
 export default App;
