@@ -24,6 +24,9 @@ const NavigationStyled = styled.nav`
   .nav-items {
     width: 100%;
     text-align: center;
+    .active {
+      background-color: var(--primary-color);
+    }
     li {
       display: block;
       a {
@@ -42,7 +45,7 @@ const NavigationStyled = styled.nav`
           height: 50%;
           background-color: var(--primary-color);
           opacity: 0.21;
-          transition: All 0.4s cubic-bezier(1, -0.2, 0.25, 0.95);
+          transition: All 0.4s;
         }
       }
       a:hover::before {

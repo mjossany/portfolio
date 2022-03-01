@@ -11,27 +11,27 @@ function Navigation() {
       </div>
       <ul className="nav-items">
         <li className="nav-item">
-          <NavLink to="/" activeClassName="active-class">
+          <NavLink to="/" activeClassName="active">
             Home
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/about" activeClassName="active-class">
+          <NavLink to="/about" activeClassName="active">
             About
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/resume" activeClassName="active-class">
+          <NavLink to="/resume" activeClassName="active">
             Resume
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/portfolio" activeClassName="active-class">
+          <NavLink to="/portfolio" activeClassName="active">
             Portfolio
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/contact" activeClassName="active-class">
+          <NavLink to="/contact" activeClassName="active">
             Contact
           </NavLink>
         </li>
