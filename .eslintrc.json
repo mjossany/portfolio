@@ -3,10 +3,11 @@
         "browser": true,
         "es2021": true
     },
-    "extends": ["airbnb", "prettier", "prettier/react"],
-    "parser": "babel-eslint",
+    "extends": ["airbnb", "prettier"],
+    "parser": "@babel/eslint-parser",
     "parserOptions": {
-      "ecmaVersion": 2020,
+      "requireConfigFile": false,
+      "ecmaVersion": "latest",
       "sourceType": "module",
       "ecmaFeatures": {
           "jsx": true,
