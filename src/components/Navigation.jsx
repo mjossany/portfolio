@@ -3,8 +3,6 @@ import { NavLink } from 'react-router-dom';
 import NavigationStyled from './Navigation.elements';
 import avatar from '../images/avatar.jpg';
 
-//oi
-
 function Navigation() {
   return (
     <NavigationStyled>

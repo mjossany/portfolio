@@ -4,16 +4,12 @@
         "es2021": true
     },
     "extends": ["airbnb", "prettier"],
-    "parser": "@babel/eslint-parser",
     "parserOptions": {
-      "requireConfigFile": false,
-      "ecmaVersion": "latest",
-      "sourceType": "module",
-      "ecmaFeatures": {
-          "jsx": true,
-          "modules": true,
-          "experimentalObjectRestSpread": true
-      }
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
     },
     "plugins": ["prettier"],
     "rules": {
