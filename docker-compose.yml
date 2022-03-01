@@ -1,0 +1,8 @@
+version: "3"
+services:
+  react-app:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
