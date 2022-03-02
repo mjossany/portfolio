@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import HomePage from '../pages/HomePage';
 
 const MainContent = () => {
   return (
@@ -10,6 +11,7 @@ const MainContent = () => {
         <div className="line-3" />
         <div className="line-4" />
       </div>
+      <HomePage />
     </MainContentStyled>
   )
 }
