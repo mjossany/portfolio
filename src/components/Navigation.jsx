@@ -37,7 +37,7 @@ function Navigation() {
         </li>
       </ul>
       <footer className="footer">
-        <p>@2022 My Portfolio</p>
+        <p>@2022 My Portfolio by Me</p>
       </footer>
     </NavigationStyled>
   );

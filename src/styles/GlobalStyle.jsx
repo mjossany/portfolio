@@ -20,8 +20,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.2rem;
   }
 
   body {

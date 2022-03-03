@@ -10,4 +10,6 @@ function App() {
   );
 }
 
+const AppStyle = styled.div``;
+
 export default App;
