@@ -11,7 +11,7 @@ const HomePage = () => {
     <HomeStyled>
       <Particles params={particlesConfig}></Particles>
       <div className="typography">
-        <h1>Hi, I'm <span>Lorem</span></h1>
+        <h1>Hi, I'm <span>Jossany</span></h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi a vitae earum molestias voluptas minus magnam totam mollitia fuga numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. A similique doloribus maxime minima, quia quasi voluptatem beatae! Velit, est cumque?
         </p>
