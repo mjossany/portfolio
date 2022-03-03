@@ -76,8 +76,13 @@ const NavigationStyled = styled.nav`
       display: block;
       a {
         display: block;
-        padding: 1rem 0;
+        padding: .45rem 0;
         position: relative;
+        z-index: 10;
+        text-transform: uppercase;
+        transition: all .4s ease-in-out;
+        font-weight: 600;
+        letter-spacing: 1px;
         &:hover {
           cursor: pointer;
         }
