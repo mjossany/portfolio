@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import HomePage from '../pages/HomePage';
 
-const MainContent = () => {
+function MainContent() {
   return (
     <MainContentStyled>
       <div className="lines">
@@ -13,7 +13,7 @@ const MainContent = () => {
       </div>
       <HomePage />
     </MainContentStyled>
-  )
+  );
 }
 
 export default MainContent;

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-const ResumePage = () => {
+function ResumePage() {
   return (
     <div>ResumePage</div>
-  )
+  );
 }
 
-export default ResumePage
+export default ResumePage;

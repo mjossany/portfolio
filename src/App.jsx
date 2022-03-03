@@ -1,3 +1,4 @@
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import MainContent from './components/MainContent';
 import AboutPage from './pages/AboutPage';
