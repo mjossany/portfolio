@@ -1,19 +1,26 @@
-import React from "react";
-import Particles from "react-tsparticles";
-import styled from "styled-components";
-import particlesConfig from "../helpers/particlesConfig";
+import React from 'react';
+import Particles from 'react-tsparticles';
+import styled from 'styled-components';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import particlesConfig from '../helpers/particlesConfig';
 
-const HomePage = () => {
-  return(
+function HomePage() {
+  return (
     <HomeStyled>
-      <Particles params={particlesConfig}></Particles>
+      <Particles params={particlesConfig} />
       <div className="typography">
-        <h1>Hi, I'm <span>Jossany</span></h1>
+        <h1>
+          {'Hi, I\'m '}
+          <span>Jossany</span>
+        </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi a vitae earum molestias voluptas minus magnam totam mollitia fuga numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. A similique doloribus maxime minima, quia quasi voluptatem beatae! Velit, est cumque?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Commodi a vitae earum molestias voluptas minus magnam totam mollitia fuga numquam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          A similique doloribus maxime minima, quia quasi voluptatem beatae!
+          Velit, est cumque?
         </p>
         <div className="icons">
           <a href="https://codepen.io/pen/" className="icon i-facebook">
@@ -28,8 +35,8 @@ const HomePage = () => {
         </div>
       </div>
     </HomeStyled>
-  )
-};
+  );
+}
 
 const HomeStyled = styled.div`
   width: 100%;

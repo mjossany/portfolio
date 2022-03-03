@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import avatar from '../images/avatar.jpg';
 import styled from 'styled-components';
+import avatar from '../images/avatar.jpg';
 
 function Navigation() {
   return (
@@ -114,4 +114,3 @@ const NavigationStyled = styled.nav`
     }
   }
 `;
-

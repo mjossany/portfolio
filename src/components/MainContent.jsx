@@ -1,8 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Route, Routes } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
+import AboutPage from '../pages/AboutPage';
+import ResumePage from '../pages/ResumePage';
+import PortfolioPage from '../pages/PortfolioPage';
+import ContactPage from '../pages/ContactPage';
 
-const MainContent = () => {
+function MainContent() {
   return (
     <MainContentStyled>
       <div className="lines">
@@ -11,12 +16,16 @@ const MainContent = () => {
         <div className="line-3" />
         <div className="line-4" />
       </div>
-      <HomePage />
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/about" element={<AboutPage />} />
+        <Route exact path="/resume" element={<ResumePage />} />
+        <Route exact path="/portfolio" element={<PortfolioPage />} />
+        <Route exact path="/contact" element={<ContactPage />} />
+      </Routes>
     </MainContentStyled>
-  )
+  );
 }
-
-export default MainContent;
 
 const MainContentStyled = styled.main`
   position: relative;
@@ -35,3 +44,5 @@ const MainContentStyled = styled.main`
     }
   }
 `;
+
+export default MainContent;
