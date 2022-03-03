@@ -1,7 +1,13 @@
-import styled from 'styled-components';
+import MainContent from './components/MainContent';
+import Sidebar from './components/Sidebar';
 
 function App() {
-  return <AppStyle>Style Components</AppStyle>;
+  return (
+    <div>
+      <Sidebar />
+      <MainContent />
+    </div>
+  );
 }
 
 const AppStyle = styled.div``;

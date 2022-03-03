@@ -24,6 +24,26 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: var(--background-dark-color);
+    color: var(--font-light-color);
+  }
+
+  a{
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: var(--white-color);
+    span {
+      font-size: 4rem;
+    }
+  }
+
+  span {
+    color: var(--primary-color);
   }
 `;
 
