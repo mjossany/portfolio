@@ -49,9 +49,16 @@ function ImageSection() {
 const ImageSectionStyled = styled.div`
 margin-top: 5rem;
   display: flex;
-  img {
-    width: 90%;
+  .left-content {
+    width: 100%;
+    height: 60vh;
+    img {
+      width: 90%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
+  
   .right-content {
     h4 {
       font-size: 2rem;
