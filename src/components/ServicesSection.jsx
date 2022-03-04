@@ -20,17 +20,15 @@ function ServicesSection() {
               Omnis iure culpa, ducimus corporis non exercitationem
               officiis nihil deserunt quaerat!"
           />
-        </div>
-        <div className="services">
-          <ServiceCard
-            image={intelligence}
-            title="Artificial Intelligence"
-            paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Omnis iure culpa, ducimus corporis non exercitationem
-              officiis nihil deserunt quaerat!"
-          />
-        </div>
-        <div className="services">
+          <div className="mid-card">
+            <ServiceCard
+              image={intelligence}
+              title="Artificial Intelligence"
+              paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Omnis iure culpa, ducimus corporis non exercitationem
+                officiis nihil deserunt quaerat!"
+            />
+          </div>
           <ServiceCard
             image={gamedev}
             title="Game Development"
@@ -44,6 +42,15 @@ function ServicesSection() {
   );
 }
 
-const ServicesSectionStyled = styled.section``;
+const ServicesSectionStyled = styled.section`
+  .services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    .mid-card {
+      margin: 0 1.2rem;
+    }
+  }
+`;
 
 export default ServicesSection;
