@@ -53,6 +53,7 @@ margin-top: 5rem;
     width: 100%;
     height: 60vh;
     img {
+      position: relative;
       width: 90%;
       height: 100%;
       object-fit: cover;
