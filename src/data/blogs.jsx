@@ -10,6 +10,7 @@ const blogs = [
     date: '01',
     month: 'March',
     image: blog1,
+    link: 'https://www.google.com/',
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ const blogs = [
     date: '01',
     month: 'March',
     image: blog2,
+    link: 'https://www.google.com/',
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ const blogs = [
     date: '01',
     month: 'March',
     image: blog3,
+    link: 'https://www.google.com/',
   },
   {
     id: 4,
@@ -31,6 +34,7 @@ const blogs = [
     date: '01',
     month: 'March',
     image: blog4,
+    link: 'https://www.google.com/',
   },
 ];
 

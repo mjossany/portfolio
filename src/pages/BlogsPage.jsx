@@ -17,9 +17,9 @@ function BlogsPage() {
                   <img src={blog.image} alt="" />
                 </div>
                 <div className="title">
-                  <h4>
+                  <a href={blog.link}>
                     {blog.title}
-                  </h4>
+                  </a>
                 </div>
               </div>
             ))
@@ -38,15 +38,32 @@ const BlogsPageStyled = styled.div`
     grid-row-gap: 3rem;
     .blog-item {
       background-color: var(--background-dark-gray);
-      padding: 2rem 1rem;
+      padding: 1rem 1rem;
     }
     .image {
       width: 100%;
-      height: 90%;
+      overflow: hidden;
+      padding-bottom: .5rem;
       img {
         width: 100%;
         height: 85%;
         object-fit: cover;
+        transition: all .4s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          transform: rotate(2deg) scale(1.1);
+        }
+      }
+    }
+    .title {
+      a {
+        font-size: 1.8rem;
+        color: var(--white-color);
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        &:hover {
+          color: var(--primary-color);
+        }
       }
     }
   }
