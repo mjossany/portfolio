@@ -1,13 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MainLayout, InnerLayout } from '../styles/Layouts';
-import Title from '../components/Title';
-import PrimaryButton from '../components/PrimaryButton';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { MainLayout, InnerLayout } from '../styles/Layouts';
+import Title from '../components/Title';
+import PrimaryButton from '../components/PrimaryButton';
+import ContactItem from '../components/ContactItem';
 
 function ContactPage() {
+  const phone = <LocalPhoneIcon />;
+  const email = <EmailIcon />;
+  const location = <LocationOnIcon />;
   return (
     <MainLayout>
       <Title title="Contact" span="Contact" />
@@ -47,6 +51,11 @@ function ContactPage() {
               </div>
             </form>
           </div>
+          <div className="right-content">
+            <ContactItem title="Phone" icon={phone} contact1="+55 21 971677882" />
+            <ContactItem title="Email" icon={email} contact1="mjossany@gmail.com" />
+            <ContactItem title="Location" icon={location} contact1="Avenida Rui Barbosa, 5, Apto 601, Niteroi, Rio de Janeiro, Brazil" />
+          </div>
         </InnerLayout>
       </ContactPageStyled>
     </MainLayout>
@@ -57,6 +66,12 @@ const ContactPageStyled = styled.section`
   .contact-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    .right-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     .contact-title {
       h4 {
         color: var(--white-color);
