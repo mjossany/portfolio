@@ -1,6 +1,4 @@
-import {
-  blog1, blog2, blog3, blog4,
-} from '../images/blogs/blog1.png';
+import blog from '../images/blogs/blog1.png';
 
 const blogs = [
   {
@@ -8,28 +6,28 @@ const blogs = [
     title: 'How to create a Blog',
     date: '01',
     month: 'March',
-    image: blog1,
+    image: blog,
   },
   {
     id: 2,
     title: 'How to create a Blog',
     date: '01',
     month: 'March',
-    image: blog2,
+    image: blog,
   },
   {
     id: 3,
     title: 'How to create a Blog',
     date: '01',
     month: 'March',
-    image: blog3,
+    image: blog,
   },
   {
     id: 4,
     title: 'How to create a Blog',
     date: '01',
     month: 'March',
-    image: blog4,
+    image: blog,
   },
 ];
 
