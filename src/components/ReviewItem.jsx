@@ -11,9 +11,24 @@ function ReviewItem({ text }) {
 }
 
 const ReviewItemStyled = styled.div`
-  height: 10vh;
   padding: 2rem 1rem;
   border-left: 6px solid var(--border-color);
+  background-color: var(--background-dark-gray);
+  position: relative;
+  width: 50%;
+  &:not(:first-child) {
+    margin-left: 2rem;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 2rem;
+    top: 100%;
+    border-width: 1rem;
+    bottom: 0;
+    border-style: solid;
+    border-color: var(--background-dark-gray) transparent transparent var(--background-dark-gray);
+  }
   p {
     padding: 1rem 0;
   }
