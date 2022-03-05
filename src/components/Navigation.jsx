@@ -31,6 +31,11 @@ function Navigation() {
           </NavLink>
         </li>
         <li className="nav-item">
+          <NavLink to="/blogs" activeclassname="active">
+            Blogs
+          </NavLink>
+        </li>
+        <li className="nav-item">
           <NavLink to="/contact" activeclassname="active">
             Contact
           </NavLink>

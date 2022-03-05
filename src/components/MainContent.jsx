@@ -6,6 +6,7 @@ import AboutPage from '../pages/AboutPage';
 import ResumePage from '../pages/ResumePage';
 import PortfolioPage from '../pages/PortfolioPage';
 import ContactPage from '../pages/ContactPage';
+import BlogsPage from '../pages/BlogsPage';
 
 function MainContent() {
   return (
@@ -21,6 +22,7 @@ function MainContent() {
         <Route exact path="/about" element={<AboutPage />} />
         <Route exact path="/resume" element={<ResumePage />} />
         <Route exact path="/portfolio" element={<PortfolioPage />} />
+        <Route exact path="/blogs" element={<BlogsPage />} />
         <Route exact path="/contact" element={<ContactPage />} />
       </Routes>
     </MainContentStyled>
