@@ -10,34 +10,36 @@ function ContactPage() {
       <ContactPageStyled>
         <InnerLayout className="contact-section">
           <div className="left-content">
-            <form className="lef-content">
+            <form className="form">
               <div className="form-field">
                 <label htmlFor="name">
                   Enter your name
-                  <input type="text" id="name" />
                 </label>
+                <input type="text" id="name" />
               </div>
               <div className="form-field">
                 <label htmlFor="email">
                   Enter your email
-                  <input type="email" id="email" />
                 </label>
+                <input type="email" id="email" />
               </div>
               <div className="form-field">
                 <label htmlFor="subject">
                   Enter the subject
-                  <input type="text" id="subject" />
                 </label>
+                <input type="text" id="subject" />
               </div>
-              <div className="text-area">
+              <div className="form-field">
                 <label htmlFor="text-area">
                   Enter your Message
-                  <textarea name="text-area" id="text-area" cols="30" rows="10" />
                 </label>
+                <textarea name="text-area" id="text-area" cols="30" rows="10" />
               </div>
             </form>
           </div>
-          <div className="right-content" />
+          <div className="right-content">
+            Oi
+          </div>
         </InnerLayout>
       </ContactPageStyled>
     </MainLayout>
@@ -48,6 +50,39 @@ const ContactPageStyled = styled.section`
   .contact-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    .form {
+      width: 100%;
+      .form-field {
+        margin-top: 2rem;
+        position: relative;
+        width: 100%;
+        label {
+          position: absolute;
+          left: 20px;
+          top: -19px;
+          display: inline-block;
+          background-color: var(--background-dark-color);
+          padding: 0 .5rem;
+        }
+        input {
+          border: 1px solid var(--border-color);
+          outline: none;
+          background: transparent;
+          height: 50px;
+          padding: 0 15px;
+          width: 100%;
+          color: inherit;
+        }
+        textarea {
+          background-color: transparent;
+          border: 1px solid var(--border-color);
+          outline: none;
+          color: inherit;
+          width: 100%;
+          padding: .8rem 1rem;
+        }
+      }
+    }
   }
 `;
 
