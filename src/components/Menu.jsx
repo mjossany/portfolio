@@ -40,6 +40,7 @@ const MenuStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  overflow: hidden;
   .grid-item {
     .portfolio-content {
       display: block;
@@ -53,9 +54,33 @@ const MenuStyled = styled.div`
         object-fit: cover;
       }
       ul {
-        display: none;
         transform: translateY(-100px);
         transition: all .4s ease-in-out;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        opacity: 0;
+        display: flex;
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--border-color);
+            width: 3rem;
+            height: 3rem;
+            padding: 1rem;
+            border-radius: 50%;
+            margin: 0 .5rem;
+            transition: all .4s ease-in-out;
+            &:hover {
+              background-color: var(--primary-color);
+            }
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
       }
       .portfolio-image {
         &::before {
@@ -71,25 +96,13 @@ const MenuStyled = styled.div`
       .portfolio-image:hover {
         ul {
           transform: translateY(0);
-          display: block;
-          position: absolute;
-          left: 50%;
-          top: 40%;
           transform: translate(-50%, -50%);
           display: flex;
           align-items: center;
           justify-content: center;
           transition: all .4s ease-in-out;
+          opacity: 1;
           li {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--border-color);
-            width: 3rem;
-            height: 3rem;
-            padding: 1rem;
-            border-radius: 50%;
-            margin: 0 .5rem;
             transition: all .4s ease-in-out;
             &:hover {
               background-color: var(--primary-color);
