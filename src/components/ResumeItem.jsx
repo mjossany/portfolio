@@ -19,7 +19,52 @@ function ResumeItem({
   );
 }
 
-const ResumeItemStyled = styled.div``;
+const ResumeItemStyled = styled.div`
+  display: flex;
+  &:not(:last-child) {
+    padding-bottom: 3rem;
+  }
+  .left-content {
+    width: 50%;
+    padding-left: 20px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -10.5px;
+      top: 5px;
+      height: 15px;
+      width: 15px;
+      border: 2px solid var(--border-color);
+      border-radius: 50%;
+      background-color: var(--background-dark-color);
+    }
+    p {
+      display: inline-block
+    }
+  }
+  .right-content {
+    padding-left: 5rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3rem;
+      height: 2px;
+      left: 0;
+      top: 15px;
+      background-color: var(--border-color);
+    }
+    h5 {
+      color: var(--primary-color);
+      font-size: 2rem;
+      padding-bottom: .4rem;
+    }
+    h6 {
+      padding-bottom: .4rem;
+    }
+  }
+`;
 
 ResumeItem.propTypes = {
   year: string.isRequired,

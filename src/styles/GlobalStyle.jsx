@@ -58,6 +58,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.2rem;
     padding-bottom: .6rem;
   }
+  //Utilities
+  .u-margin-bottom {
+    margin-bottom: 4rem;
+  }
 `;
 
 export default GlobalStyle;
