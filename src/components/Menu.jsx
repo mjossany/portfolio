@@ -36,7 +36,28 @@ function Menu({ menuItem }) {
   );
 }
 
-const MenuStyled = styled.div``;
+const MenuStyled = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  .grid-item {
+    .portfolio-content {
+      display: block;
+      position: relative;
+      h6 {
+        font-size: 1.5rem;
+      }
+      img {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+      }
+      ul {
+        display: none;
+      }
+    }
+  }
+`;
 
 Menu.propTypes = {
   menuItem: arrayOf().isRequired,
