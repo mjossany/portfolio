@@ -4,9 +4,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import { arrayOf } from 'prop-types';
 
-function MenuItem({ menuItem }) {
+function Menu({ menuItem }) {
   return (
-    <MenuItemStyled>
+    <MenuStyled>
       {
         menuItem.map((item) => (
           <div className="grid-item" key={item.id}>
@@ -32,14 +32,14 @@ function MenuItem({ menuItem }) {
           </div>
         ))
       }
-    </MenuItemStyled>
+    </MenuStyled>
   );
 }
 
-const MenuItemStyled = styled.div``;
+const MenuStyled = styled.div``;
 
-MenuItem.propTypes = {
+Menu.propTypes = {
   menuItem: arrayOf().isRequired,
 };
 
-export default MenuItem;
+export default Menu;

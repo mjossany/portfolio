@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Title from '../components/Title';
 import { InnerLayout, MainLayout } from '../styles/Layouts';
 import portfolio from '../data/portfolio';
-import MenuItem from '../components/MenuItem';
+import Menu from '../components/Menu';
 
 function PortfolioPage() {
   const [menuItem] = useState(portfolio);
@@ -10,7 +10,7 @@ function PortfolioPage() {
     <MainLayout>
       <Title title="Portfolio" span="Portfolio" />
       <InnerLayout>
-        <MenuItem menuItem={menuItem} />
+        <Menu menuItem={menuItem} />
       </InnerLayout>
     </MainLayout>
   );
