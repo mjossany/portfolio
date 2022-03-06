@@ -16,7 +16,27 @@ function ProgressBar({ title, width, text }) {
   );
 }
 
-const ProgressBarStyled = styled.div``;
+const ProgressBarStyled = styled.div`
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    p {
+      padding-right: 1.1rem;
+    }
+    .progress {
+      position: relative;
+      width: 100%;
+      height: .4rem;
+      background-color: var(--border-color);
+      span {
+        background-color: var(--primary-color);
+        position: absolute;
+        height: 100%;
+      }
+    }
+  }
+
+`;
 
 ProgressBar.propTypes = {
   title: string.isRequired,

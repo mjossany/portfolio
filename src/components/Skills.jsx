@@ -13,8 +13,33 @@ function Skills() {
           <div className="skills">
             <ProgressBar
               title="HTML5"
-              width="70%"
-              text="70%"
+              width="50%"
+              text="50%"
+            />
+            <ProgressBar
+              title="CSS3"
+              width="50%"
+              text="50%"
+            />
+            <ProgressBar
+              title="JAVASCRIPT"
+              width="50%"
+              text="50%"
+            />
+            <ProgressBar
+              title="REACT JS"
+              width="50%"
+              text="50%"
+            />
+            <ProgressBar
+              title="MYSQL"
+              width="50%"
+              text="50%"
+            />
+            <ProgressBar
+              title="PYTHON"
+              width="50%"
+              text="50%"
             />
           </div>
         </InnerLayout>
@@ -23,6 +48,13 @@ function Skills() {
   );
 }
 
-const SkillsStyled = styled.section``;
+const SkillsStyled = styled.section`
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 3rem;
+  }
+`;
 
 export default Skills;
