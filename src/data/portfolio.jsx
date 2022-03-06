@@ -4,7 +4,7 @@ import react1 from '../images/portImages/react_styled.png';
 import img2 from '../images/portImages/maya-4.jpg';
 import img3 from '../images/portImages/maya-3.jpg';
 
-const portfolios = [
+const portfolio = [
   {
     id: 1,
     category: 'CSS',
@@ -70,4 +70,4 @@ const portfolios = [
   },
 ];
 
-export default portfolios;
+export default portfolio;

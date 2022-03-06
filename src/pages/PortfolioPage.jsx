@@ -1,24 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useState } from 'react';
 import Title from '../components/Title';
 import { InnerLayout, MainLayout } from '../styles/Layouts';
+import portfolio from '../data/portfolio';
+import MenuItem from '../components/MenuItem';
 
 function PortfolioPage() {
-  
+  const [menuItem] = useState(portfolio);
   return (
     <MainLayout>
       <Title title="Portfolio" span="Portfolio" />
       <InnerLayout>
-        <PortfolioPageStyled>
-          PortfolioPage
-        </PortfolioPageStyled>
+        <MenuItem menuItem={menuItem} />
       </InnerLayout>
     </MainLayout>
   );
 }
-
-const PortfolioPageStyled = styled.section`
-  
-`;
 
 export default PortfolioPage;
