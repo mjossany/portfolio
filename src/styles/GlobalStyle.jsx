@@ -115,6 +115,9 @@ const GlobalStyle = createGlobalStyle`
   .u-margin-bottom {
     margin-bottom: 4rem;
   }
+
+  // Global Media Queries
+  
 `;
 
 export default GlobalStyle;

@@ -18,4 +18,9 @@ const SidebarStyled = styled.div`
   height: 100vh;
   background-color: var(--sidebar-dark-color);
   overflow: hidden;
+  opacity: 1;
+  z-index: 99;
+  @media screen and (max-width: 1200px) {
+    transform: translateX(-100%);
+  }
 `;
