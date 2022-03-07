@@ -2,8 +2,9 @@ import React from 'react';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import { Switch } from '@mui/material';
 import styled from 'styled-components';
+import { func } from 'prop-types';
 
-function LightModeSwitch() {
+function LightModeSwitch({ changeTheme }) {
   return (
     <LightModeSwitchStyled className="light-dark-mode">
       <div className="left-content">
@@ -40,5 +41,9 @@ const LightModeSwitchStyled = styled.div`
     color: var(--white-color);
   }
 `;
+
+LightModeSwitch.propTypes = {
+  changeTheme: func.isRequired,
+};
 
 export default LightModeSwitch;
