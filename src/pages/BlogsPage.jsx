@@ -58,6 +58,7 @@ const BlogsPageStyled = styled.div`
     .title {
       a {
         font-size: 1.8rem;
+        padding: 2rem 0;
         color: var(--white-color);
         cursor: pointer;
         transition: all .4s ease-in-out;
