@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import LightModeSwitch from './components/LightModeSwitch';
 import MainContent from './components/MainContent';
 import Sidebar from './components/Sidebar';
+import HamburguerIcon from './components/HamburguerIcon';
 
 function App() {
   const [theme, setTheme] = useState('dark-theme');
@@ -24,6 +25,7 @@ function App() {
   return (
     <div>
       <Sidebar />
+      <HamburguerIcon />
       <LightModeSwitch changeTheme={themeToggler} switchStatus={checked} />
       <MainContent />
     </div>
