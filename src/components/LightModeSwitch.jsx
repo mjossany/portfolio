@@ -2,9 +2,9 @@ import React from 'react';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import { Switch } from '@mui/material';
 import styled from 'styled-components';
-import { func } from 'prop-types';
+import { bool, func } from 'prop-types';
 
-function LightModeSwitch({ changeTheme }) {
+function LightModeSwitch({ changeTheme, switchStatus }) {
   return (
     <LightModeSwitchStyled className="light-dark-mode">
       <div className="left-content">
@@ -13,8 +13,8 @@ function LightModeSwitch({ changeTheme }) {
       <div className="right-content">
         <Switch
           value=""
-            // checked={}
-            // onChange={}
+          checked={switchStatus}
+          onClick={changeTheme}
           inputProps={{ 'arial-label': '' }}
           size="medium"
         />
@@ -44,6 +44,7 @@ const LightModeSwitchStyled = styled.div`
 
 LightModeSwitch.propTypes = {
   changeTheme: func.isRequired,
+  switchStatus: bool.isRequired,
 };
 
 export default LightModeSwitch;
