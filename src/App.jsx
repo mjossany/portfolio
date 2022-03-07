@@ -7,6 +7,7 @@ import HamburguerIcon from './components/HamburguerIcon';
 function App() {
   const [theme, setTheme] = useState('dark-theme');
   const [checked, setChecked] = useState(false);
+  const [navToggle, setNavToggle] = useState(false);
 
   useEffect(() => {
     document.documentElement.className = theme;
@@ -24,8 +25,8 @@ function App() {
 
   return (
     <div>
-      <Sidebar />
-      <HamburguerIcon />
+      <Sidebar navToggleStatus={navToggle} />
+      <HamburguerIcon navToggleStatus={navToggle} changeNavToggle={setNavToggle} />
       <LightModeSwitch changeTheme={themeToggler} switchStatus={checked} />
       <MainContent />
     </div>

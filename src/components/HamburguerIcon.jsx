@@ -2,11 +2,12 @@ import React from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import styled from 'styled-components';
 import { IconButton } from '@mui/material';
+import { bool, func } from 'prop-types';
 
-function HamburguerIcon() {
+function HamburguerIcon({ navToggleStatus, changeNavToggle }) {
   return (
     <HamburgueMenuStyled>
-      <IconButton>
+      <IconButton onClick={() => changeNavToggle(!navToggleStatus)}>
         <MenuIcon className="hamburguer-menu" />
       </IconButton>
     </HamburgueMenuStyled>
@@ -22,10 +23,15 @@ const HamburgueMenuStyled = styled.div`
   @media screen and (max-width: 1200px) {
     display: block;
     position: fixed;
-    left: 3%;
-    top: 2.5%;
+    right: 1.7%;
+    top: 2%;
     z-index: 15;
   }
 `;
+
+HamburguerIcon.propTypes = {
+  navToggleStatus: bool.isRequired,
+  changeNavToggle: func.isRequired,
+};
 
 export default HamburguerIcon;

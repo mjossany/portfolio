@@ -117,7 +117,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   // Global Media Queries
-  
+  .nav-toggle {
+    @media screen and (max-width: 1200px) {
+      transform: translateX(0);
+    }
+  }
 `;
 
 export default GlobalStyle;

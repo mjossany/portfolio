@@ -1,16 +1,21 @@
+import { bool } from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 import Navigation from './Navigation';
 
-function Sidebar() {
+function Sidebar({ navToggleStatus }) {
   return (
-    <SidebarStyled>
+    <SidebarStyled className={`${navToggleStatus ? 'nav-toggle' : ''}`}>
       <Navigation />
     </SidebarStyled>
   );
 }
 
 export default Sidebar;
+
+Sidebar.propTypes = {
+  navToggleStatus: bool.isRequired,
+};
 
 const SidebarStyled = styled.div`
   width: 16.3rem;
