@@ -115,6 +115,13 @@ const GlobalStyle = createGlobalStyle`
   .u-margin-bottom {
     margin-bottom: 4rem;
   }
+
+  // Global Media Queries
+  .nav-toggle {
+    @media screen and (max-width: 1200px) {
+      transform: translateX(0);
+    }
+  }
 `;
 
 export default GlobalStyle;
