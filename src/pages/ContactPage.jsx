@@ -74,9 +74,8 @@ const ContactPageStyled = styled.section`
         }
     }
     .right-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
     }
     .contact-title {
       h4 {

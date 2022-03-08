@@ -88,6 +88,7 @@ const NavigationStyled = styled.nav`
         letter-spacing: 1px;
         &:hover {
           cursor: pointer;
+          color: var(--white-color);
         }
         &::before {
           content: '';
@@ -99,6 +100,7 @@ const NavigationStyled = styled.nav`
           background-color: var(--primary-color);
           opacity: 0.21;
           transition: All 0.4s;
+          z-index: 1;
         }
       }
       a:hover::before {
