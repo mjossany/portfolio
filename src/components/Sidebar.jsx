@@ -1,21 +1,20 @@
-import { bool } from 'prop-types';
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
+import { PortfolioContext } from '../context/portfolio';
 import Navigation from './Navigation';
 
-function Sidebar({ navToggleStatus }) {
+function Sidebar() {
+  const {
+    navToggle,
+  } = useContext(PortfolioContext);
   return (
-    <SidebarStyled className={`${navToggleStatus ? 'nav-toggle' : ''}`}>
+    <SidebarStyled className={`${navToggle ? 'nav-toggle' : ''}`}>
       <Navigation />
     </SidebarStyled>
   );
 }
 
 export default Sidebar;
-
-Sidebar.propTypes = {
-  navToggleStatus: bool.isRequired,
-};
 
 const SidebarStyled = styled.div`
   width: 16.3rem;

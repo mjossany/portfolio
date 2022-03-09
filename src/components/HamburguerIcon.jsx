@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import styled from 'styled-components';
 import { IconButton } from '@mui/material';
-import { bool, func } from 'prop-types';
+import { PortfolioContext } from '../context/portfolio';
 
-function HamburguerIcon({ navToggleStatus, changeNavToggle }) {
+function HamburguerIcon() {
+  const {
+    navToggle,
+    setNavToggle,
+  } = useContext(PortfolioContext);
   return (
     <HamburgueMenuStyled>
-      <IconButton onClick={() => changeNavToggle(!navToggleStatus)}>
+      <IconButton onClick={() => setNavToggle(!navToggle)}>
         <MenuIcon className="hamburguer-menu" />
       </IconButton>
     </HamburgueMenuStyled>
@@ -28,10 +32,5 @@ const HamburgueMenuStyled = styled.div`
     z-index: 15;
   }
 `;
-
-HamburguerIcon.propTypes = {
-  navToggleStatus: bool.isRequired,
-  changeNavToggle: func.isRequired,
-};
 
 export default HamburguerIcon;

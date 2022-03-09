@@ -28,6 +28,7 @@
             "required": {
                 "some": ["nesting", "id"]
             }
-        }]
+        }],
+        "react/jsx-no-constructed-context-values" : 0
     }
 }

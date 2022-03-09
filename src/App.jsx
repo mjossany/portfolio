@@ -1,33 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import LightModeSwitch from './components/LightModeSwitch';
 import MainContent from './components/MainContent';
 import Sidebar from './components/Sidebar';
 import HamburguerIcon from './components/HamburguerIcon';
+import { PortfolioContext } from './context/portfolio';
 
 function App() {
-  const [theme, setTheme] = useState('dark-theme');
-  const [checked, setChecked] = useState(false);
-  const [navToggle, setNavToggle] = useState(false);
-
-  useEffect(() => {
-    document.documentElement.className = theme;
-  }, [theme]);
-
-  const themeToggler = () => {
-    if (theme === 'light-theme') {
-      setTheme('dark-theme');
-      setChecked(false);
-    } else {
-      setTheme('light-theme');
-      setChecked(true);
-    }
-  };
-
+  const {
+    theme,
+  } = useContext(PortfolioContext);
+  console.log(theme);
   return (
     <div>
-      <Sidebar navToggleStatus={navToggle} />
-      <HamburguerIcon navToggleStatus={navToggle} changeNavToggle={setNavToggle} />
-      <LightModeSwitch changeTheme={themeToggler} switchStatus={checked} />
+      <Sidebar />
+      <HamburguerIcon />
+      <LightModeSwitch />
       <MainContent />
     </div>
   );
