@@ -31,10 +31,10 @@ const particlesConfig = {
   },
   particles: {
     color: {
-      value: '#ffffff',
+      value: '#8e8e8e',
     },
     links: {
-      color: '#ffffff',
+      color: '#8e8e8e',
       distance: 150,
       enable: true,
       opacity: 0.5,
