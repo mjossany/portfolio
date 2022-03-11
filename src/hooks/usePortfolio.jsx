@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 
 const usePortfolio = () => {
-  const [theme, setTheme] = useState('dark-theme');
-  const [checked, setChecked] = useState(false);
+  const [theme, setTheme] = useState('light-theme');
+  const [lightModeChecked, setLightModeChecked] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
 
   useEffect(() => {
@@ -12,15 +12,15 @@ const usePortfolio = () => {
   const themeToggler = () => {
     if (theme === 'light-theme') {
       setTheme('dark-theme');
-      setChecked(false);
+      setLightModeChecked(false);
     } else {
       setTheme('light-theme');
-      setChecked(true);
+      setLightModeChecked(true);
     }
   };
   return {
     theme,
-    checked,
+    lightModeChecked,
     navToggle,
     setNavToggle,
     themeToggler,

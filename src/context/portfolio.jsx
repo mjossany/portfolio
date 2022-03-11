@@ -7,7 +7,7 @@ export const PortfolioContext = createContext({});
 function PortfolioProvider({ children }) {
   const {
     theme,
-    checked,
+    lightModeChecked,
     navToggle,
     setNavToggle,
     themeToggler,
@@ -16,7 +16,7 @@ function PortfolioProvider({ children }) {
     <PortfolioContext.Provider
       value={{
         theme,
-        checked,
+        lightModeChecked,
         navToggle,
         setNavToggle,
         themeToggler,

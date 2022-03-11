@@ -6,7 +6,7 @@ import { PortfolioContext } from '../context/portfolio';
 
 function LightModeSwitch() {
   const {
-    checked,
+    lightModeChecked,
     themeToggler,
   } = useContext(PortfolioContext);
   return (
@@ -17,7 +17,7 @@ function LightModeSwitch() {
       <div className="right-content">
         <Switch
           value=""
-          checked={checked}
+          checked={lightModeChecked}
           onClick={themeToggler}
           inputProps={{ 'arial-label': '' }}
           size="medium"
