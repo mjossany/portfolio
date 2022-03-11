@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import { Switch } from '@mui/material';
 import styled from 'styled-components';
-import { bool, func } from 'prop-types';
+import { PortfolioContext } from '../context/portfolio';
 
-function LightModeSwitch({ changeTheme, switchStatus }) {
+function LightModeSwitch() {
+  const {
+    lightModeChecked,
+    themeToggler,
+  } = useContext(PortfolioContext);
   return (
     <LightModeSwitchStyled className="light-dark-mode">
       <div className="left-content">
@@ -13,8 +17,8 @@ function LightModeSwitch({ changeTheme, switchStatus }) {
       <div className="right-content">
         <Switch
           value=""
-          checked={switchStatus}
-          onClick={changeTheme}
+          checked={lightModeChecked}
+          onClick={themeToggler}
           inputProps={{ 'arial-label': '' }}
           size="medium"
         />
@@ -41,10 +45,5 @@ const LightModeSwitchStyled = styled.div`
     color: var(--white-color);
   }
 `;
-
-LightModeSwitch.propTypes = {
-  changeTheme: func.isRequired,
-  switchStatus: bool.isRequired,
-};
 
 export default LightModeSwitch;
