@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
@@ -7,10 +7,14 @@ import ResumePage from '../pages/ResumePage';
 import PortfolioPage from '../pages/PortfolioPage';
 import ContactPage from '../pages/ContactPage';
 import BlogsPage from '../pages/BlogsPage';
+import { PortfolioContext } from '../context/portfolio';
 
 function MainContent() {
+  const {
+    navToggle,
+  } = useContext(PortfolioContext);
   return (
-    <MainContentStyled>
+    <MainContentStyled navToggleStatus={navToggle}>
       <div className="lines">
         <div className="line-1" />
         <div className="line-2" />
