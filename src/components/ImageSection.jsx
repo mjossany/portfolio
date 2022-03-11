@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import image from '../images/about-me.jpg';
+import image from '../images/AboutMeImage.png';
 import PrimaryButton from './PrimaryButton';
 
 function ImageSection() {
@@ -49,12 +49,7 @@ function ImageSection() {
 const ImageSectionStyled = styled.div`
   margin-top: 5rem;
   display: flex;
-  @media screen and (max-width: 1000px) {
-    flex-direction: column;
-    .left-content {
-      margin-bottom: 2rem;
-    }
-  }
+  align-items: center;
   .left-content {
     width: 100%;
     height: 60vh;
@@ -63,6 +58,13 @@ const ImageSectionStyled = styled.div`
       width: 90%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    .left-content {
+      margin-bottom: 2rem;
     }
   }
   

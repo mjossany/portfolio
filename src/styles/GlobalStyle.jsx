@@ -65,6 +65,7 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
+    font-size: 2vh;
   }
 
   body {
