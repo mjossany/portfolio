@@ -34,7 +34,7 @@ const MainContentStyled = styled.main`
   margin-left: 16.3rem;
   min-height: 100vh;
   @media screen and (max-width: 1200px) {
-    margin-left: 0;
+    margin-left: ${({ navToggleStatus }) => (navToggleStatus ? '16.3rem' : 0)}
   }
   .lines {
     position: absolute;
