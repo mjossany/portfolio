@@ -11,9 +11,11 @@ function ResumeItem({
         <p>{year}</p>
       </div>
       <div className="right-content">
-        <h5>{title}</h5>
-        <h6>{subTitle}</h6>
-        <p>{text}</p>
+        <div className="right-content-infos">
+          <h5>{title}</h5>
+          <h6>{subTitle}</h6>
+          <p>{text}</p>
+        </div>
       </div>
     </ResumeItemStyled>
   );
@@ -30,7 +32,7 @@ const ResumeItemStyled = styled.div`
     padding-bottom: 3rem;
   }
   .left-content {
-    width: 50%;
+    width: 30rem;
     padding-left: 20px;
     position: relative;
     &::before {
@@ -45,28 +47,63 @@ const ResumeItemStyled = styled.div`
       background-color: var(--background-dark-color);
     }
     p {
-      display: inline-block
+      display: inline;
+      position: relative;
+      top: -1%;
+      @media screen and (max-width: 1024px) {
+        top: 6%;
+      }
+      @media screen and (max-width: 912px) {
+        top: -1%;
+      }
+      @media screen and (max-width: 820px) {
+        top: -.5%;
+      }
+      @media screen and (max-width: 768px) {
+        top: 0;
+      }
+      @media screen and (max-width: 540px) {
+        top: 3%;
+      }
+      @media screen and (max-width: 414px) {
+        top: .5%;
+      }
+      @media screen and (max-width: 375px) {
+        top: 3%;
+      }
+      @media screen and (max-width: 360px) {
+        top: 2%;
+      }
+      @media screen and (max-width: 280px) {
+        top: -1.5%;
+      }
     }
   }
   .right-content {
-    padding-left: 5rem;
+    /* padding-left: 5rem; */
     position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 3rem;
-      height: 2px;
-      left: 0;
-      top: 15px;
-      background-color: var(--border-color);
-    }
-    h5 {
-      color: var(--primary-color);
-      font-size: 2rem;
-      padding-bottom: .4rem;
-    }
-    h6 {
-      padding-bottom: .4rem;
+    .right-content-infos {
+      position: relative;
+        h5 {
+          color: var(--primary-color);
+          font-size: 2rem;
+          padding-bottom: .4rem;
+        }
+        h6 {
+          padding-bottom: .4rem;
+        }
+        @media screen and (max-width: 3000px) {
+          top: -10%;
+        }
+        @media screen and (max-width: 1280px) {
+          top: -10%;
+        }
+        @media screen and (max-width: 1024px) {
+          top: -5%;
+        }
+        @media screen and (max-width: 375px) {
+          top: -3%;
+        }
     }
   }
 `;
