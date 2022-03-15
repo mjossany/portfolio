@@ -1,4 +1,6 @@
 import React from 'react';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import SchoolIcon from '@mui/icons-material/School';
 import { InnerLayout, MainLayout } from '../../styles/Layouts';
 import Title from '../Title';
 import {
@@ -9,15 +11,22 @@ import {
   ProgressBarTitle,
   ProgressSpan,
   ResumePageContainer,
+  ResumeSection,
   Skills,
-  SkillsContainer,
+  SkillsSection,
+  SmallTitle,
+  SmallTitleContainer,
+  SmallTitleH3,
+  SmallTitleP,
 } from './Styled';
 
 function ResumePageComponent() {
+  const briefcase = <BusinessCenterIcon />;
+  const education = <SchoolIcon />;
   return (
     <MainLayout>
       <ResumePageContainer>
-        <SkillsContainer>
+        <SkillsSection>
           <Title title="My Skills" span="My Skills" />
           <InnerLayout>
             <Skills>
@@ -114,7 +123,32 @@ function ResumePageComponent() {
               </ProgressBar>
             </Skills>
           </InnerLayout>
-        </SkillsContainer>
+        </SkillsSection>
+        <ResumeSection>
+          <Title title="Resume" span="Resume" />
+          <InnerLayout>
+            <SmallTitleContainer>
+              <SmallTitle>
+                <SmallTitleP>
+                  {briefcase}
+                </SmallTitleP>
+                <SmallTitleH3>
+                  Working Experience
+                </SmallTitleH3>
+              </SmallTitle>
+            </SmallTitleContainer>
+            <SmallTitleContainer>
+              <SmallTitle>
+                <SmallTitleP>
+                  {education}
+                </SmallTitleP>
+                <SmallTitleH3>
+                  Education Path
+                </SmallTitleH3>
+              </SmallTitle>
+            </SmallTitleContainer>
+          </InnerLayout>
+        </ResumeSection>
       </ResumePageContainer>
     </MainLayout>
   );

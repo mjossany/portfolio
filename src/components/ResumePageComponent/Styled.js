@@ -4,7 +4,9 @@ export const ResumePageContainer = styled.div`
 
 `;
 
-export const SkillsContainer = styled.section`
+// SKILLS SECTION
+
+export const SkillsSection = styled.section`
 
 `;
 
@@ -46,4 +48,29 @@ export const ProgressSpan = styled.span`
   background-color: var(--primary-color);
   position: absolute;
   height: 100%;
+`;
+
+// RESUME SECTION
+export const ResumeSection = styled.section`
+
+`;
+
+export const SmallTitleContainer = styled.div`
+  padding-bottom: 3rem;
+`;
+
+export const SmallTitle = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const SmallTitleP = styled.p`
+  padding-right: 1rem;
+  svg {
+    font-size: 3rem;
+  }
+`;
+
+export const SmallTitleH3 = styled.h3`
+  color: var(--white-color);
 `;
