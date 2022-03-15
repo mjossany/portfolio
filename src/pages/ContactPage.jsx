@@ -5,7 +5,6 @@ import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { MainLayout, InnerLayout } from '../styles/Layouts';
 import Title from '../components/Title';
-import PrimaryButton from '../components/PrimaryButton';
 import ContactItem from '../components/ContactItem';
 
 function ContactPage() {
@@ -47,7 +46,7 @@ function ContactPage() {
                 <textarea name="text-area" id="text-area" cols="30" rows="10" />
               </div>
               <div className="form-field f-button">
-                <PrimaryButton title="Send Email" />
+                {/* <PrimaryButton title="Send Email" /> */}
               </div>
             </form>
           </div>

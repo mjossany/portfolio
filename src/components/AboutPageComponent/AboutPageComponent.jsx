@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainLayout } from '../../styles/Layouts';
+import { InnerLayout, MainLayout } from '../../styles/Layouts';
 import Title from '../Title';
 import {
   AboutInfo,
@@ -15,9 +15,19 @@ import {
   LeftContent,
   Paragraph,
   RightContent,
+  ServiceCard,
+  ServiceCardContainer,
+  ServiceCardH4,
+  ServiceCardImage,
+  ServiceCardP,
+  Services,
+  ServicesSection,
   Span,
 } from './Styled';
 import image from '../../images/AboutMeImage.png';
+import design from '../../images/design.svg';
+import intelligence from '../../images/intelligence.svg';
+import gamedev from '../../images/game-dev.svg';
 
 function AboutPageComponent() {
   return (
@@ -90,6 +100,52 @@ function AboutPageComponent() {
             </DownloadCvButton>
           </RightContent>
         </ImageSection>
+        <ServicesSection>
+          <InnerLayout>
+            <Title title="Services" span="Services" />
+            <Services>
+              <ServiceCard>
+                <ServiceCardContainer>
+                  <ServiceCardImage src={design} />
+                  <ServiceCardH4>
+                    Web Design
+                  </ServiceCardH4>
+                  <ServiceCardP>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis iure culpa, ducimus corporis non exercitationem
+                    officiis nihil deserunt quaerat!
+                  </ServiceCardP>
+                </ServiceCardContainer>
+              </ServiceCard>
+              <ServiceCard>
+                <ServiceCardContainer>
+                  <ServiceCardImage src={intelligence} />
+                  <ServiceCardH4>
+                    Artificial Intelligence
+                  </ServiceCardH4>
+                  <ServiceCardP>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis iure culpa, ducimus corporis non exercitationem
+                    officiis nihil deserunt quaerat!
+                  </ServiceCardP>
+                </ServiceCardContainer>
+              </ServiceCard>
+              <ServiceCard>
+                <ServiceCardContainer>
+                  <ServiceCardImage src={gamedev} />
+                  <ServiceCardH4>
+                    Game Development
+                  </ServiceCardH4>
+                  <ServiceCardP>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis iure culpa, ducimus corporis non exercitationem
+                    officiis nihil deserunt quaerat!
+                  </ServiceCardP>
+                </ServiceCardContainer>
+              </ServiceCard>
+            </Services>
+          </InnerLayout>
+        </ServicesSection>
       </AboutPageContainer>
     </MainLayout>
   );
