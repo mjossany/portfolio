@@ -4,10 +4,6 @@ import ResumePageComponent from '../components/ResumePageComponent/ResumePageCom
 function ResumePage() {
   return (
     <ResumePageComponent />
-    // <MainLayout>
-    //   <Skills />
-    //   <Resume />
-    // </MainLayout>
   );
 }
 
