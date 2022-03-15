@@ -155,3 +155,39 @@ export const ServiceCardH4 = styled.h4`
 export const ServiceCardP = styled.p`
   padding: .8rem 0;
 `;
+
+// Reviews Section
+export const ReviewsSection = styled.section`
+
+`;
+
+export const Reviews = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  @media screen and (max-width: 650px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
+export const ReviewItem = styled.div`
+  padding: 2rem 1rem;
+  border-left: 6px solid var(--border-color);
+  background-color: var(--background-dark-gray);
+  position: relative;
+  width: 100%;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 2rem;
+    top: 100%;
+    border-width: 1rem;
+    bottom: 0;
+    border-style: solid;
+    border-color: var(--background-dark-gray) transparent transparent var(--background-dark-gray);
+  }
+`;
+
+export const ReviewItemP = styled.p`
+  padding: 1rem 0;
+`;

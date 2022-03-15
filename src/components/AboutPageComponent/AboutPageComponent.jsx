@@ -14,6 +14,10 @@ import {
   ImageSection,
   LeftContent,
   Paragraph,
+  ReviewItem,
+  ReviewItemP,
+  Reviews,
+  ReviewsSection,
   RightContent,
   ServiceCard,
   ServiceCardContainer,
@@ -146,6 +150,25 @@ function AboutPageComponent() {
             </Services>
           </InnerLayout>
         </ServicesSection>
+        <ReviewsSection>
+          <Title title="Reviews" span="Reviews" />
+          <InnerLayout>
+            <Reviews>
+              <ReviewItem>
+                <ReviewItemP>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis ab soluta vel neque cum tenetur architecto voluptates error ea totam.
+                </ReviewItemP>
+              </ReviewItem>
+              <ReviewItem>
+                <ReviewItemP>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis ab soluta vel neque cum tenetur architecto voluptates error ea totam.
+                </ReviewItemP>
+              </ReviewItem>
+            </Reviews>
+          </InnerLayout>
+        </ReviewsSection>
       </AboutPageContainer>
     </MainLayout>
   );
