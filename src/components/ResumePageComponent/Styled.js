@@ -55,11 +55,11 @@ export const ResumeSection = styled.section`
 
 `;
 
-export const SmallTitleContainer = styled.div`
+export const SmallTitle = styled.div`
   padding-bottom: 3rem;
 `;
 
-export const SmallTitle = styled.div`
+export const SmallTitleContainer = styled.div`
   display: flex;
   align-items: center;
 `;
@@ -73,4 +73,67 @@ export const SmallTitleP = styled.p`
 
 export const SmallTitleH3 = styled.h3`
   color: var(--white-color);
+`;
+
+export const ResumeContent = styled.div`
+  border-left: 2px solid var(--border-color);
+`;
+
+export const ResumeItem = styled.div`
+  display: flex;
+  align-items: flex-start;
+  @media screen and (max-width: 421px) {
+    p, h5, h6 {
+      font-size: 80%;
+    }
+  }
+  &:not(:last-child) {
+    padding-bottom: 3rem;
+  }
+`;
+
+export const ResumeItemLeftContent = styled.div`
+  width: 30rem;
+  padding-left: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -10.5px;
+    height: 15px;
+    width: 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    background-color: var(--background-dark-color);
+  }
+`;
+
+export const LeftContentP = styled.p`
+  display: inline;
+`;
+
+export const ResumeItemRightContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+`;
+
+export const RightContentH5 = styled.h5`
+  color: var(--primary-color);
+  display: flex;
+  height: 95px;
+  line-height: 45px;
+  font-size: 2rem;
+  padding-bottom: .4rem;
+`;
+
+export const RightContentH6 = styled.h6`
+  padding-bottom: .4rem;
+`;
+
+export const RightContentP = styled.p`
+
 `;

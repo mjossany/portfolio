@@ -4,14 +4,22 @@ import SchoolIcon from '@mui/icons-material/School';
 import { InnerLayout, MainLayout } from '../../styles/Layouts';
 import Title from '../Title';
 import {
+  LeftContentP,
   Progress,
   ProgressBar,
   ProgressBarInfos,
   ProgressBarInfosP,
   ProgressBarTitle,
   ProgressSpan,
+  ResumeContent,
+  ResumeItem,
+  ResumeItemLeftContent,
+  ResumeItemRightContent,
   ResumePageContainer,
   ResumeSection,
+  RightContentH5,
+  RightContentH6,
+  RightContentP,
   Skills,
   SkillsSection,
   SmallTitle,
@@ -127,26 +135,144 @@ function ResumePageComponent() {
         <ResumeSection>
           <Title title="Resume" span="Resume" />
           <InnerLayout>
-            <SmallTitleContainer>
-              <SmallTitle>
+            <SmallTitle>
+              <SmallTitleContainer>
                 <SmallTitleP>
                   {briefcase}
                 </SmallTitleP>
                 <SmallTitleH3>
                   Working Experience
                 </SmallTitleH3>
-              </SmallTitle>
-            </SmallTitleContainer>
-            <SmallTitleContainer>
-              <SmallTitle>
+              </SmallTitleContainer>
+            </SmallTitle>
+            <ResumeContent>
+              <ResumeItem>
+                <ResumeItemLeftContent>
+                  <LeftContentP>
+                    2012 - 2017
+                  </LeftContentP>
+                </ResumeItemLeftContent>
+                <ResumeItemRightContent>
+                  <RightContentH5>
+                    Business Administration
+                  </RightContentH5>
+                  <RightContentH6>
+                    Fluminense Federal University
+                  </RightContentH6>
+                  <RightContentP>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime velit id fuga tenetur suscipit error in nemo soluta quam consequuntur.
+                  </RightContentP>
+                </ResumeItemRightContent>
+              </ResumeItem>
+              <ResumeItem>
+                <ResumeItemLeftContent>
+                  <LeftContentP>
+                    2012 - 2017
+                  </LeftContentP>
+                </ResumeItemLeftContent>
+                <ResumeItemRightContent>
+                  <RightContentH5>
+                    Business Administration
+                  </RightContentH5>
+                  <RightContentH6>
+                    Fluminense Federal University
+                  </RightContentH6>
+                  <RightContentP>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime velit id fuga tenetur suscipit error in nemo soluta quam consequuntur.
+                  </RightContentP>
+                </ResumeItemRightContent>
+              </ResumeItem>
+              <ResumeItem>
+                <ResumeItemLeftContent>
+                  <LeftContentP>
+                    2012 - 2017
+                  </LeftContentP>
+                </ResumeItemLeftContent>
+                <ResumeItemRightContent>
+                  <RightContentH5>
+                    Business Administration
+                  </RightContentH5>
+                  <RightContentH6>
+                    Fluminense Federal University
+                  </RightContentH6>
+                  <RightContentP>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime velit id fuga tenetur suscipit error in nemo soluta quam consequuntur.
+                  </RightContentP>
+                </ResumeItemRightContent>
+              </ResumeItem>
+            </ResumeContent>
+            <SmallTitle style={{ padding: '2rem 0' }}>
+              <SmallTitleContainer>
                 <SmallTitleP>
                   {education}
                 </SmallTitleP>
                 <SmallTitleH3>
                   Education Path
                 </SmallTitleH3>
-              </SmallTitle>
-            </SmallTitleContainer>
+              </SmallTitleContainer>
+            </SmallTitle>
+            <ResumeContent>
+              <ResumeItem>
+                <ResumeItemLeftContent>
+                  <LeftContentP>
+                    2012 - 2017
+                  </LeftContentP>
+                </ResumeItemLeftContent>
+                <ResumeItemRightContent>
+                  <RightContentH5>
+                    Business Administration
+                  </RightContentH5>
+                  <RightContentH6>
+                    Fluminense Federal University
+                  </RightContentH6>
+                  <RightContentP>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime velit id fuga tenetur suscipit error in nemo soluta quam consequuntur.
+                  </RightContentP>
+                </ResumeItemRightContent>
+              </ResumeItem>
+              <ResumeItem>
+                <ResumeItemLeftContent>
+                  <LeftContentP>
+                    2012 - 2017
+                  </LeftContentP>
+                </ResumeItemLeftContent>
+                <ResumeItemRightContent>
+                  <RightContentH5>
+                    Business Administration
+                  </RightContentH5>
+                  <RightContentH6>
+                    Fluminense Federal University
+                  </RightContentH6>
+                  <RightContentP>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime velit id fuga tenetur suscipit error in nemo soluta quam consequuntur.
+                  </RightContentP>
+                </ResumeItemRightContent>
+              </ResumeItem>
+              <ResumeItem>
+                <ResumeItemLeftContent>
+                  <LeftContentP>
+                    2012 - 2017
+                  </LeftContentP>
+                </ResumeItemLeftContent>
+                <ResumeItemRightContent>
+                  <RightContentH5>
+                    Business Administration
+                  </RightContentH5>
+                  <RightContentH6>
+                    Fluminense Federal University
+                  </RightContentH6>
+                  <RightContentP>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime velit id fuga tenetur suscipit error in nemo soluta quam consequuntur.
+                  </RightContentP>
+                </ResumeItemRightContent>
+              </ResumeItem>
+            </ResumeContent>
           </InnerLayout>
         </ResumeSection>
       </ResumePageContainer>
