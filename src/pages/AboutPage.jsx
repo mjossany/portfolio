@@ -4,14 +4,6 @@ import AboutPageComponent from '../components/AboutPageComponent/AboutPageCompon
 function AboutPage() {
   return (
     <AboutPageComponent />
-    // <MainLayout>
-    //   <AboutStyled>
-    //     <Title title="About Me" span="About me" />
-    //     <ImageSection />
-    //     <ServicesSection />
-    //     <ReviewsSection />
-    //   </AboutStyled>
-    // </MainLayout>
   );
 }
 
