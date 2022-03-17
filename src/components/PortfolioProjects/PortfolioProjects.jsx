@@ -12,11 +12,11 @@ import {
   ProjectContent,
 } from './Styled';
 
-function PortfolioProjects({ projects }) {
+function PortfolioProjects({ projectsToDisplay }) {
   return (
     <PortfolioProjectsContainer>
       {
-        projects.map((project) => (
+        projectsToDisplay.map((project) => (
           <GridItem key={project.id}>
             <ProjectContent>
               <PortfolioImageContainer>
@@ -49,7 +49,7 @@ function PortfolioProjects({ projects }) {
 }
 
 PortfolioProjects.propTypes = {
-  projects: arrayOf().isRequired,
+  projectsToDisplay: arrayOf().isRequired,
 };
 
 export default PortfolioProjects;

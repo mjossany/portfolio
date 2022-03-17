@@ -32,6 +32,25 @@ export const PortfolioImageContainer = styled.div`
     width: 0;
     transition: all .4s ease-in-out;
   }
+  &:hover {
+    ul {
+      transform: translateY(0);
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .4s ease-in-out;
+      opacity: 1;
+    }
+    &::before {
+      height: calc(100% - 32%);
+      width: calc(100% - 4%);
+      background-color: white;
+      opacity: 0.9;
+      transform-origin: left;
+      transition: all .4s ease-in-out;
+    }
+  }
 `;
 
 export const Image = styled.img`
@@ -48,15 +67,6 @@ export const LinksUl = styled.ul`
   top: 40%;
   opacity: 0;
   display: flex;
-  &:hover {
-    transform: translateY(0);
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .4s ease-in-out;
-    opacity: 1;
-  }
 `;
 
 export const Link = styled.li`
@@ -72,6 +82,9 @@ export const Link = styled.li`
   transition: all .4s ease-in-out;
   &:hover {
     background-color: var(--primary-color);
+    svg {
+      color: var(--white-color);
+    }
   }
 `;
 
@@ -79,6 +92,9 @@ export const Icon = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  svg {
+    font-size: 2rem;
+  }
 `;
 
 export const ItemTitle = styled.h6`
