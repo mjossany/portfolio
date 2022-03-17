@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import Title from '../components/Title';
 import { InnerLayout, MainLayout } from '../styles/Layouts';
 import portfolio from '../data/portfolio';
-import Button from '../components/Button';
 import PortfolioProjects from '../components/PortfolioProjects/PortfolioProjects';
+import FilterButtons from '../components/FilterButtons/FilterButtons';
 
-const allButtons = ['All', ...new Set(portfolio.map((item) => item.category))];
+const allCategories = ['All', ...new Set(portfolio.map((item) => item.category))];
 
 function PortfolioPage() {
   const [projects, setProjects] = useState(portfolio);
-  const [button] = useState(allButtons);
+  const [categories] = useState(allCategories);
 
   const filter = (btn) => {
     if (btn === 'All') {
@@ -24,7 +24,7 @@ function PortfolioPage() {
     <MainLayout>
       <Title title="Portfolio" span="Portfolio" />
       <InnerLayout>
-        <Button filter={filter} button={button} />
+        <FilterButtons filterByCategory={filter} buttonsCategories={categories} />
         <PortfolioProjects projectsToDisplay={projects} />
       </InnerLayout>
     </MainLayout>

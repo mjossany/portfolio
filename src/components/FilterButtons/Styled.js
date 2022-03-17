@@ -1,6 +1,15 @@
 import styled from 'styled-components';
 
 export const ButtonsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 2.4rem auto;
+`;
+
+export const Button = styled.button`
   outline: none;
   border: none;
   background-color: var(--background-light-color-2);
@@ -19,13 +28,4 @@ export const ButtonsContainer = styled.div`
   &:not(:last-child) {
     margin-right: .6rem;
   }
-`;
-
-export const Button = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 70%;
-  margin: 2.4rem auto;
 `;
