@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { InnerLayout, MainLayout } from '../../styles/Layouts';
 import FilterButtons from '../FilterButtons/FilterButtons';
-import Title from '../Title';
+import Title from '../Title/Title';
 import portfolio from '../../data/portfolio';
 import PortfolioProjects from '../PortfolioProjects/PortfolioProjects';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import Title from '../Title';
+import Title from '../Title/Title';
 import { InnerLayout, MainLayout } from '../../styles/Layouts';
 import {
   Button,

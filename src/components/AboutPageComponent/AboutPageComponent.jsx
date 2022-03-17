@@ -1,6 +1,6 @@
 import React from 'react';
 import { InnerLayout, MainLayout } from '../../styles/Layouts';
-import Title from '../Title';
+import Title from '../Title/Title';
 import {
   AboutInfo,
   AboutInfoData,

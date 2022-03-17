@@ -2,7 +2,7 @@ import React from 'react';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import SchoolIcon from '@mui/icons-material/School';
 import { InnerLayout, MainLayout } from '../../styles/Layouts';
-import Title from '../Title';
+import Title from '../Title/Title';
 import {
   LeftContentP,
   Progress,
