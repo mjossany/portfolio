@@ -1,8 +1,7 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import YouTubeIcon from '@mui/icons-material/YouTube';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {
   HomePageContainer, PresentationContainer, H1, Span, P, Icons, Icon,
 } from './Styled';
@@ -20,21 +19,17 @@ function HomePageComponent() {
           </Span>
         </H1>
         <P>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Commodi a vitae earum molestias voluptas minus magnam totam mollitia fuga numquam.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          A similique doloribus maxime minima, quia quasi voluptatem beatae!
-          Velit, est cumque?
+          I am a 27 years old brazilian development student. This is my portfolio.
+          Here you can know me and my projects a little better!
+          On the Contact section you can get in touch with me if you want.
+          I hope you enjoy it!
         </P>
         <Icons>
-          <Icon>
-            <FacebookIcon />
-          </Icon>
-          <Icon>
+          <Icon href="https://github.com/mjossany">
             <GitHubIcon />
           </Icon>
-          <Icon>
-            <YouTubeIcon />
+          <Icon href="https://www.linkedin.com/in/jossanymoura/">
+            <LinkedInIcon />
           </Icon>
         </Icons>
       </PresentationContainer>
