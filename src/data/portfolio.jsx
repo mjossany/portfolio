@@ -1,4 +1,4 @@
-import css1 from '../images/portImages/cv_css.png';
+import portfolioImg from '../images/portImages/responsive-portfolio.png';
 import css2 from '../images/portImages/ms.png';
 import react1 from '../images/portImages/react_styled.png';
 import img2 from '../images/portImages/maya-4.jpg';
@@ -7,12 +7,11 @@ import img3 from '../images/portImages/maya-3.jpg';
 const portfolio = [
   {
     id: 1,
-    category: 'CSS',
-    image: css1,
+    category: 'React',
+    image: portfolioImg,
     link1: 'https://www.google.com',
-    link2: 'https://www.google.com',
     title: 'Responsive Resume',
-    text: 'Created with only HTML and CSS.',
+    text: 'Created with only React and Styled Components',
   },
   {
     id: 2,
