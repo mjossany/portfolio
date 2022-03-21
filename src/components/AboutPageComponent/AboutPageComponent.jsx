@@ -17,10 +17,10 @@ import {
   ImageSection,
   LeftContent,
   Paragraph,
-  ReviewItem,
-  ReviewItemP,
-  Reviews,
-  ReviewsSection,
+  // ReviewItem,
+  // ReviewItemP,
+  // Reviews,
+  // ReviewsSection,
   RightContent,
   ServiceCard,
   ServiceCardContainer,
@@ -159,7 +159,7 @@ function AboutPageComponent() {
             </Services>
           </InnerLayout>
         </ServicesSection>
-        <ReviewsSection>
+        {/* <ReviewsSection>
           <Title title="Reviews" span="Reviews" />
           <InnerLayout>
             <Reviews>
@@ -177,7 +177,7 @@ function AboutPageComponent() {
               </ReviewItem>
             </Reviews>
           </InnerLayout>
-        </ReviewsSection>
+        </ReviewsSection> */}
       </AboutPageContainer>
     </MainLayout>
   );
