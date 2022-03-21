@@ -1,4 +1,7 @@
 import React from 'react';
+import WebIcon from '@mui/icons-material/Web';
+import StorageIcon from '@mui/icons-material/Storage';
+import ScienceIcon from '@mui/icons-material/Science';
 import { InnerLayout, MainLayout } from '../../styles/Layouts';
 import Title from '../Title/Title';
 import {
@@ -14,10 +17,10 @@ import {
   ImageSection,
   LeftContent,
   Paragraph,
-  ReviewItem,
-  ReviewItemP,
-  Reviews,
-  ReviewsSection,
+  // ReviewItem,
+  // ReviewItemP,
+  // Reviews,
+  // ReviewsSection,
   RightContent,
   ServiceCard,
   ServiceCardContainer,
@@ -29,9 +32,6 @@ import {
   Span,
 } from './Styled';
 import image from '../../images/AboutMeImage.png';
-import design from '../../images/design.svg';
-import intelligence from '../../images/intelligence.svg';
-import gamedev from '../../images/game-dev.svg';
 
 function AboutPageComponent() {
   return (
@@ -51,11 +51,17 @@ function AboutPageComponent() {
               </Span>
             </H4>
             <Paragraph>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Omnis iure culpa, ducimus corporis non exercitationem
-              officiis nihil deserunt quaerat! Perferendis fuga,
-              nulla numquam maxime sapiente ad,
-              hic reprehenderit praesentium deserunt neque quos repellat?
+              I graduated in Business Administration in 2017 and now I am a
+              Full Stack Web Development student at Trybe,
+              a school that teaches how to program, learn and work.
+              I love technology and all the possibilities that it offers to change
+              a person&#39;s life.
+              I&#39;ve decided to make that career change because I believe that technology
+              is the best tool to make a fairer society and preserve the Earth.
+              I see myself as an easygoing person and believe that I can contribute and
+              fit into any team with my empathy and communication skills.
+              Recently I&#39;ve been studying JavaScript,
+              React and SQL and learning a lot about soft skills.
             </Paragraph>
             <AboutInfo>
               <AboutInfoTitle>
@@ -75,12 +81,12 @@ function AboutPageComponent() {
                   Location
                 </AboutInfoP>
                 <AboutInfoP>
-                  Service
+                  Occupation
                 </AboutInfoP>
               </AboutInfoTitle>
               <AboutInfoData>
                 <AboutInfoDataP>
-                  : Lorem Ipsum
+                  : Jossany Moura da Silva Junior
                 </AboutInfoDataP>
                 <AboutInfoDataP>
                   : 27
@@ -110,47 +116,50 @@ function AboutPageComponent() {
             <Services>
               <ServiceCard>
                 <ServiceCardContainer>
-                  <ServiceCardImage src={design} />
+                  <ServiceCardImage>
+                    <WebIcon />
+                  </ServiceCardImage>
                   <ServiceCardH4>
-                    Web Design
+                    Front-End
                   </ServiceCardH4>
                   <ServiceCardP>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis iure culpa, ducimus corporis non exercitationem
-                    officiis nihil deserunt quaerat!
+                    JavaScript, React, Redux, Styled Components.
+                    These are some of the tools that I use to build the Front of the applications.
                   </ServiceCardP>
                 </ServiceCardContainer>
               </ServiceCard>
               <ServiceCard>
                 <ServiceCardContainer>
-                  <ServiceCardImage src={intelligence} />
+                  <ServiceCardImage>
+                    <StorageIcon />
+                  </ServiceCardImage>
                   <ServiceCardH4>
-                    Artificial Intelligence
+                    Back-End
                   </ServiceCardH4>
                   <ServiceCardP>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis iure culpa, ducimus corporis non exercitationem
-                    officiis nihil deserunt quaerat!
+                    NodeJs, Express, MySQL, MongoDB, Sequelize.
+                    These are some of the tools that I use to build the Back of the applications.
                   </ServiceCardP>
                 </ServiceCardContainer>
               </ServiceCard>
               <ServiceCard>
                 <ServiceCardContainer>
-                  <ServiceCardImage src={gamedev} />
+                  <ServiceCardImage>
+                    <ScienceIcon />
+                  </ServiceCardImage>
                   <ServiceCardH4>
-                    Game Development
+                    Tests
                   </ServiceCardH4>
                   <ServiceCardP>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis iure culpa, ducimus corporis non exercitationem
-                    officiis nihil deserunt quaerat!
+                    To test my applications I use Jest, Mocha and other tools.
+                    I do unit tests and integration tests.
                   </ServiceCardP>
                 </ServiceCardContainer>
               </ServiceCard>
             </Services>
           </InnerLayout>
         </ServicesSection>
-        <ReviewsSection>
+        {/* <ReviewsSection>
           <Title title="Reviews" span="Reviews" />
           <InnerLayout>
             <Reviews>
@@ -168,7 +177,7 @@ function AboutPageComponent() {
               </ReviewItem>
             </Reviews>
           </InnerLayout>
-        </ReviewsSection>
+        </ReviewsSection> */}
       </AboutPageContainer>
     </MainLayout>
   );

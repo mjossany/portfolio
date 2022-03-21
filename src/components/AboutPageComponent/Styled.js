@@ -131,8 +131,11 @@ export const ServiceCardContainer = styled.div`
   padding: 1.2rem;
 `;
 
-export const ServiceCardImage = styled.img`
-
+export const ServiceCardImage = styled.a`
+  svg {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+  }
 `;
 
 export const ServiceCardH4 = styled.h4`

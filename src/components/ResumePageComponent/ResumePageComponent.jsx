@@ -19,7 +19,6 @@ import {
   ResumeSection,
   RightContentH5,
   RightContentH6,
-  RightContentP,
   Skills,
   SkillsSection,
   SmallTitle,
@@ -92,6 +91,32 @@ function ResumePageComponent() {
               </ProgressBar>
               <ProgressBar>
                 <ProgressBarTitle>
+                  STYLED COMPONENTS
+                </ProgressBarTitle>
+                <ProgressBarInfos>
+                  <ProgressBarInfosP>
+                    50%
+                  </ProgressBarInfosP>
+                  <Progress>
+                    <ProgressSpan style={{ width: '50%' }} />
+                  </Progress>
+                </ProgressBarInfos>
+              </ProgressBar>
+              <ProgressBar>
+                <ProgressBarTitle>
+                  NODE
+                </ProgressBarTitle>
+                <ProgressBarInfos>
+                  <ProgressBarInfosP>
+                    50%
+                  </ProgressBarInfosP>
+                  <Progress>
+                    <ProgressSpan style={{ width: '50%' }} />
+                  </Progress>
+                </ProgressBarInfos>
+              </ProgressBar>
+              <ProgressBar>
+                <ProgressBarTitle>
                   MYSQL
                 </ProgressBarTitle>
                 <ProgressBarInfos>
@@ -105,20 +130,7 @@ function ResumePageComponent() {
               </ProgressBar>
               <ProgressBar>
                 <ProgressBarTitle>
-                  PYTHON
-                </ProgressBarTitle>
-                <ProgressBarInfos>
-                  <ProgressBarInfosP>
-                    50%
-                  </ProgressBarInfosP>
-                  <Progress>
-                    <ProgressSpan style={{ width: '50%' }} />
-                  </Progress>
-                </ProgressBarInfos>
-              </ProgressBar>
-              <ProgressBar>
-                <ProgressBarTitle>
-                  HTML5
+                  MONGODB
                 </ProgressBarTitle>
                 <ProgressBarInfos>
                   <ProgressBarInfosP>
@@ -149,58 +161,31 @@ function ResumePageComponent() {
               <ResumeItem>
                 <ResumeItemLeftContent>
                   <LeftContentP>
-                    2012 - 2017
+                    2014 - 2015
                   </LeftContentP>
                 </ResumeItemLeftContent>
                 <ResumeItemRightContent>
                   <RightContentH5>
-                    Business Administration
+                    Human Resources Intern
                   </RightContentH5>
                   <RightContentH6>
-                    Fluminense Federal University
+                    Oceaneering
                   </RightContentH6>
-                  <RightContentP>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime velit id fuga tenetur suscipit error in nemo soluta quam consequuntur.
-                  </RightContentP>
                 </ResumeItemRightContent>
               </ResumeItem>
               <ResumeItem>
                 <ResumeItemLeftContent>
                   <LeftContentP>
-                    2012 - 2017
+                    2015 - 2017
                   </LeftContentP>
                 </ResumeItemLeftContent>
                 <ResumeItemRightContent>
                   <RightContentH5>
-                    Business Administration
+                    Finance Intern
                   </RightContentH5>
                   <RightContentH6>
-                    Fluminense Federal University
+                    Furnas
                   </RightContentH6>
-                  <RightContentP>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime velit id fuga tenetur suscipit error in nemo soluta quam consequuntur.
-                  </RightContentP>
-                </ResumeItemRightContent>
-              </ResumeItem>
-              <ResumeItem>
-                <ResumeItemLeftContent>
-                  <LeftContentP>
-                    2012 - 2017
-                  </LeftContentP>
-                </ResumeItemLeftContent>
-                <ResumeItemRightContent>
-                  <RightContentH5>
-                    Business Administration
-                  </RightContentH5>
-                  <RightContentH6>
-                    Fluminense Federal University
-                  </RightContentH6>
-                  <RightContentP>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime velit id fuga tenetur suscipit error in nemo soluta quam consequuntur.
-                  </RightContentP>
                 </ResumeItemRightContent>
               </ResumeItem>
             </ResumeContent>
@@ -228,48 +213,36 @@ function ResumePageComponent() {
                   <RightContentH6>
                     Fluminense Federal University
                   </RightContentH6>
-                  <RightContentP>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime velit id fuga tenetur suscipit error in nemo soluta quam consequuntur.
-                  </RightContentP>
                 </ResumeItemRightContent>
               </ResumeItem>
               <ResumeItem>
                 <ResumeItemLeftContent>
                   <LeftContentP>
-                    2012 - 2017
+                    2017 - 2018
                   </LeftContentP>
                 </ResumeItemLeftContent>
                 <ResumeItemRightContent>
                   <RightContentH5>
-                    Business Administration
+                    Alumni COPPEAD Business School
                   </RightContentH5>
                   <RightContentH6>
-                    Fluminense Federal University
+                    Coppead
                   </RightContentH6>
-                  <RightContentP>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime velit id fuga tenetur suscipit error in nemo soluta quam consequuntur.
-                  </RightContentP>
                 </ResumeItemRightContent>
               </ResumeItem>
               <ResumeItem>
                 <ResumeItemLeftContent>
                   <LeftContentP>
-                    2012 - 2017
+                    2021-2022
                   </LeftContentP>
                 </ResumeItemLeftContent>
                 <ResumeItemRightContent>
                   <RightContentH5>
-                    Business Administration
+                    Full Stack Web Development
                   </RightContentH5>
                   <RightContentH6>
-                    Fluminense Federal University
+                    Trybe
                   </RightContentH6>
-                  <RightContentP>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime velit id fuga tenetur suscipit error in nemo soluta quam consequuntur.
-                  </RightContentP>
                 </ResumeItemRightContent>
               </ResumeItem>
             </ResumeContent>

@@ -29,7 +29,6 @@ export const Image = styled.img`
   object-fit: cover;
   transition: all .4s ease-in-out;
   &:hover {
-    cursor: pointer;
     transform: rotate(2deg) scale(1.1);
   }
 `;

@@ -1,6 +1,5 @@
 import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import PinterestIcon from '@mui/icons-material/Pinterest';
 import { arrayOf } from 'prop-types';
 import {
   GridItem,
@@ -25,11 +24,6 @@ function PortfolioProjects({ projectsToDisplay }) {
                   <Link href>
                     <Icon href={project.link1}>
                       <GitHubIcon />
-                    </Icon>
-                  </Link>
-                  <Link href>
-                    <Icon href={project.link2}>
-                      <PinterestIcon />
                     </Icon>
                   </Link>
                 </LinksUl>

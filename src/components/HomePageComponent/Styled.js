@@ -44,7 +44,7 @@ export const Icon = styled.a`
     color: var(--primary-color);
   }
   &:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
   svg {
     margin: .5rem;
