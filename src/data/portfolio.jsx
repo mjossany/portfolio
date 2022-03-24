@@ -9,7 +9,7 @@ const portfolio = [
     id: 1,
     category: 'React',
     image: portfolioImg,
-    link1: 'https://www.google.com',
+    link1: 'https://github.com/mjossany/portfolio',
     title: 'Responsive Resume',
     text: 'Created with only React and Styled Components',
   },

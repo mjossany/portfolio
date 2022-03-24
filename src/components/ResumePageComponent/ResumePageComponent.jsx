@@ -223,10 +223,10 @@ function ResumePageComponent() {
                 </ResumeItemLeftContent>
                 <ResumeItemRightContent>
                   <RightContentH5>
-                    Alumni COPPEAD Business School
+                    Business Post Graduation
                   </RightContentH5>
                   <RightContentH6>
-                    Coppead
+                    Alumni COPPEAD
                   </RightContentH6>
                 </ResumeItemRightContent>
               </ResumeItem>
