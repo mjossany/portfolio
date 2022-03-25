@@ -15,6 +15,7 @@ export const BlogsPageContainer = styled.div`
 export const BlogItem = styled.div`
   background-color: var(--background-dark-gray);
   padding: 1rem 1rem;
+  height: fit-content;
 `;
 
 export const ImageContainer = styled.div`
@@ -34,7 +35,8 @@ export const Image = styled.img`
 `;
 
 export const TitleContainer = styled.div`
-
+  display: flex;
+  align-items: center;
 `;
 
 export const BlogTitle = styled.a`
