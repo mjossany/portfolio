@@ -12,10 +12,10 @@ const usePortfolio = () => {
   const themeToggler = () => {
     if (theme === 'light-theme') {
       setTheme('dark-theme');
-      setLightModeChecked(false);
+      setLightModeChecked(true);
     } else {
       setTheme('light-theme');
-      setLightModeChecked(true);
+      setLightModeChecked(false);
     }
   };
   return {
