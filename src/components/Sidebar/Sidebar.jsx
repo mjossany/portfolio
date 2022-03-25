@@ -16,6 +16,7 @@ import { PortfolioContext } from '../../context/portfolio';
 function Sidebar() {
   const {
     navToggle,
+    setNavToggle,
   } = useContext(PortfolioContext);
   return (
     <SidebarContainer className={`${navToggle ? 'nav-toggle' : ''}`}>
@@ -25,32 +26,56 @@ function Sidebar() {
         </NavAvatarContainer>
         <NavItems>
           <NavItem>
-            <NavLink to="/" activeclassname="active">
+            <NavLink
+              to="/"
+              activeclassname="active"
+              onClick={() => setNavToggle(false)}
+            >
               Home
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/about" activeclassname="active">
+            <NavLink
+              to="/about"
+              activeclassname="active"
+              onClick={() => setNavToggle(false)}
+            >
               About
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/resume" activeclassname="active">
+            <NavLink
+              to="/resume"
+              activeclassname="active"
+              onClick={() => setNavToggle(false)}
+            >
               Resume
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/portfolio" activeclassname="active">
+            <NavLink
+              to="/portfolio"
+              activeclassname="active"
+              onClick={() => setNavToggle(false)}
+            >
               Portfolio
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/blogs" activeclassname="active">
+            <NavLink
+              to="/blogs"
+              activeclassname="active"
+              onClick={() => setNavToggle(false)}
+            >
               Blogs
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/contact" activeclassname="active">
+            <NavLink
+              to="/contact"
+              activeclassname="active"
+              onClick={() => setNavToggle(false)}
+            >
               Contact
             </NavLink>
           </NavItem>
