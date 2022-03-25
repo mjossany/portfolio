@@ -62,7 +62,9 @@ function ContactPageComponent() {
                 <TextArea name="text-area" id="text-area" cols="30" rows="10" />
               </FormField>
               <ButtonContainer>
-                <Button>
+                <Button
+                  href="mailto:mjossany@gmail.com"
+                >
                   Send Email
                 </Button>
               </ButtonContainer>
