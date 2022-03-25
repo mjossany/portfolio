@@ -27,7 +27,7 @@ export const PortfolioImageContainer = styled.div`
     content: "";
     position: absolute;
     left: 2%;
-    top: 4%;
+    top: 2%;
     height: 0;
     width: 0;
     transition: all .4s ease-in-out;
@@ -35,7 +35,7 @@ export const PortfolioImageContainer = styled.div`
   &:hover {
     ul {
       transform: translateY(0);
-      transform: translate(-50%, -50%);
+      transform: translate(-52%, -70%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -43,8 +43,8 @@ export const PortfolioImageContainer = styled.div`
       opacity: 1;
     }
     &::before {
-      height: calc(100% - 32%);
-      width: calc(100% - 4%);
+      height: calc(100% - 33.8%);
+      width: calc(100% - 4.2%);
       background-color: white;
       opacity: 0.9;
       transform-origin: left;
