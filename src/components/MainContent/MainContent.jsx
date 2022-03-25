@@ -12,9 +12,13 @@ import { PortfolioContext } from '../../context/portfolio';
 function MainContent() {
   const {
     navToggle,
+    setNavToggle,
   } = useContext(PortfolioContext);
   return (
-    <MainContentContainer navToggleStatus={navToggle}>
+    <MainContentContainer
+      navToggleStatus={navToggle}
+      onClick={() => setNavToggle(false)}
+    >
       <Lines>
         <Line />
         <Line />
