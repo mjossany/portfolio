@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import { Switch } from '@mui/material';
-import { LeftContent, LightModeSwitchContainer, RightContent } from './Styled';
+import { LightModeSwitchContainer, RightContent } from './Styled';
 import { PortfolioContext } from '../../context/portfolio';
 
 function LightModeSwitch() {
@@ -11,9 +11,7 @@ function LightModeSwitch() {
   } = useContext(PortfolioContext);
   return (
     <LightModeSwitchContainer>
-      <LeftContent>
-        <Brightness4Icon />
-      </LeftContent>
+      <Brightness4Icon />
       <RightContent>
         <Switch
           value=""

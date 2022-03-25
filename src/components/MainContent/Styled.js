@@ -4,6 +4,8 @@ export const MainContentContainer = styled.main`
   position: relative;
   margin-left: 16.3rem;
   min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
   @media screen and (max-width: 1200px) {
     margin-left: 0;
   }

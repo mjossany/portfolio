@@ -9,6 +9,7 @@ export const ImageSection = styled.div`
   margin-top: 5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   @media screen and (max-width: 1000px) {
     flex-direction: column;
   }
@@ -17,16 +18,18 @@ export const ImageSection = styled.div`
 export const LeftContent = styled.div`
   width: 100%;
   height: 60vh;
-  @media screen and (max-width: 1000px) {
-    margin-bottom: 2rem;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Image = styled.img`
-  position: relative;
   width: 90%;
   height: 100%;
   object-fit: cover;
+  @media screen and (max-width: 2559px) {
+    height: 80%;
+  }
 `;
 
 export const RightContent = styled.div`

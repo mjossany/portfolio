@@ -4,6 +4,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import { InnerLayout, MainLayout } from '../../styles/Layouts';
 import Title from '../Title/Title';
 import {
+  Education,
   LeftContentP,
   Progress,
   ProgressBar,
@@ -11,6 +12,8 @@ import {
   ProgressBarInfosP,
   ProgressBarTitle,
   ProgressSpan,
+  Resume,
+  ResumeAndEducationContainer,
   ResumeContent,
   ResumeItem,
   ResumeItemLeftContent,
@@ -147,105 +150,111 @@ function ResumePageComponent() {
         <ResumeSection>
           <Title title="Resume" span="Resume" />
           <InnerLayout>
-            <SmallTitle>
-              <SmallTitleContainer>
-                <SmallTitleP>
-                  {briefcase}
-                </SmallTitleP>
-                <SmallTitleH3>
-                  Working Experience
-                </SmallTitleH3>
-              </SmallTitleContainer>
-            </SmallTitle>
-            <ResumeContent>
-              <ResumeItem>
-                <ResumeItemLeftContent>
-                  <LeftContentP>
-                    2014 - 2015
-                  </LeftContentP>
-                </ResumeItemLeftContent>
-                <ResumeItemRightContent>
-                  <RightContentH5>
-                    Human Resources Intern
-                  </RightContentH5>
-                  <RightContentH6>
-                    Oceaneering
-                  </RightContentH6>
-                </ResumeItemRightContent>
-              </ResumeItem>
-              <ResumeItem>
-                <ResumeItemLeftContent>
-                  <LeftContentP>
-                    2015 - 2017
-                  </LeftContentP>
-                </ResumeItemLeftContent>
-                <ResumeItemRightContent>
-                  <RightContentH5>
-                    Finance Intern
-                  </RightContentH5>
-                  <RightContentH6>
-                    Furnas
-                  </RightContentH6>
-                </ResumeItemRightContent>
-              </ResumeItem>
-            </ResumeContent>
-            <SmallTitle style={{ padding: '2rem 0' }}>
-              <SmallTitleContainer>
-                <SmallTitleP>
-                  {education}
-                </SmallTitleP>
-                <SmallTitleH3>
-                  Education Path
-                </SmallTitleH3>
-              </SmallTitleContainer>
-            </SmallTitle>
-            <ResumeContent>
-              <ResumeItem>
-                <ResumeItemLeftContent>
-                  <LeftContentP>
-                    2012 - 2017
-                  </LeftContentP>
-                </ResumeItemLeftContent>
-                <ResumeItemRightContent>
-                  <RightContentH5>
-                    Business Administration
-                  </RightContentH5>
-                  <RightContentH6>
-                    Fluminense Federal University
-                  </RightContentH6>
-                </ResumeItemRightContent>
-              </ResumeItem>
-              <ResumeItem>
-                <ResumeItemLeftContent>
-                  <LeftContentP>
-                    2017 - 2018
-                  </LeftContentP>
-                </ResumeItemLeftContent>
-                <ResumeItemRightContent>
-                  <RightContentH5>
-                    Alumni COPPEAD Business School
-                  </RightContentH5>
-                  <RightContentH6>
-                    Coppead
-                  </RightContentH6>
-                </ResumeItemRightContent>
-              </ResumeItem>
-              <ResumeItem>
-                <ResumeItemLeftContent>
-                  <LeftContentP>
-                    2021-2022
-                  </LeftContentP>
-                </ResumeItemLeftContent>
-                <ResumeItemRightContent>
-                  <RightContentH5>
-                    Full Stack Web Development
-                  </RightContentH5>
-                  <RightContentH6>
-                    Trybe
-                  </RightContentH6>
-                </ResumeItemRightContent>
-              </ResumeItem>
-            </ResumeContent>
+            <ResumeAndEducationContainer>
+              <Resume>
+                <SmallTitle>
+                  <SmallTitleContainer>
+                    <SmallTitleP>
+                      {briefcase}
+                    </SmallTitleP>
+                    <SmallTitleH3>
+                      Working Experience
+                    </SmallTitleH3>
+                  </SmallTitleContainer>
+                </SmallTitle>
+                <ResumeContent>
+                  <ResumeItem>
+                    <ResumeItemLeftContent>
+                      <LeftContentP>
+                        2014 - 2015
+                      </LeftContentP>
+                    </ResumeItemLeftContent>
+                    <ResumeItemRightContent>
+                      <RightContentH5>
+                        Human Resources Intern
+                      </RightContentH5>
+                      <RightContentH6>
+                        Oceaneering
+                      </RightContentH6>
+                    </ResumeItemRightContent>
+                  </ResumeItem>
+                  <ResumeItem>
+                    <ResumeItemLeftContent>
+                      <LeftContentP>
+                        2015 - 2017
+                      </LeftContentP>
+                    </ResumeItemLeftContent>
+                    <ResumeItemRightContent>
+                      <RightContentH5>
+                        Finance Intern
+                      </RightContentH5>
+                      <RightContentH6>
+                        Furnas
+                      </RightContentH6>
+                    </ResumeItemRightContent>
+                  </ResumeItem>
+                </ResumeContent>
+              </Resume>
+              <Education>
+                <SmallTitle>
+                  <SmallTitleContainer>
+                    <SmallTitleP>
+                      {education}
+                    </SmallTitleP>
+                    <SmallTitleH3>
+                      Education Path
+                    </SmallTitleH3>
+                  </SmallTitleContainer>
+                </SmallTitle>
+                <ResumeContent>
+                  <ResumeItem>
+                    <ResumeItemLeftContent>
+                      <LeftContentP>
+                        2012 - 2017
+                      </LeftContentP>
+                    </ResumeItemLeftContent>
+                    <ResumeItemRightContent>
+                      <RightContentH5>
+                        Business Administration
+                      </RightContentH5>
+                      <RightContentH6>
+                        Fluminense Federal University
+                      </RightContentH6>
+                    </ResumeItemRightContent>
+                  </ResumeItem>
+                  <ResumeItem>
+                    <ResumeItemLeftContent>
+                      <LeftContentP>
+                        2017 - 2018
+                      </LeftContentP>
+                    </ResumeItemLeftContent>
+                    <ResumeItemRightContent>
+                      <RightContentH5>
+                        Business Post Graduation
+                      </RightContentH5>
+                      <RightContentH6>
+                        Alumni COPPEAD
+                      </RightContentH6>
+                    </ResumeItemRightContent>
+                  </ResumeItem>
+                  <ResumeItem>
+                    <ResumeItemLeftContent>
+                      <LeftContentP>
+                        2021-2022
+                      </LeftContentP>
+                    </ResumeItemLeftContent>
+                    <ResumeItemRightContent>
+                      <RightContentH5>
+                        Full Stack Web Development
+                      </RightContentH5>
+                      <RightContentH6>
+                        Trybe
+                      </RightContentH6>
+                    </ResumeItemRightContent>
+                  </ResumeItem>
+                </ResumeContent>
+              </Education>
+            </ResumeAndEducationContainer>
           </InnerLayout>
         </ResumeSection>
       </ResumePageContainer>

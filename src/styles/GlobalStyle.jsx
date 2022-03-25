@@ -65,7 +65,10 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
-    font-size: 2vh;
+    font-size: 16px;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 
   body {
