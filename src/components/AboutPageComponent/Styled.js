@@ -21,19 +21,25 @@ export const LeftContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 2rem;
+  @media screen and (max-width: 768px) {
+    padding-right: 0;
+    margin-bottom: 4rem;
+  }
 `;
 
 export const Image = styled.img`
   width: 90%;
-  height: 100%;
+  height: 110%;
   object-fit: cover;
-  @media screen and (max-width: 2559px) {
-    height: 80%;
-  }
 `;
 
 export const RightContent = styled.div`
   width: 100%;
+  padding-left: 2rem;
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+  }
 `;
 
 export const H4 = styled.h4`
