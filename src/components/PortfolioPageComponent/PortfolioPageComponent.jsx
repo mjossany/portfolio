@@ -5,11 +5,12 @@ import Title from '../Title/Title';
 import portfolio from '../../data/portfolio';
 import PortfolioProjects from '../PortfolioProjects/PortfolioProjects';
 
-const allCategories = ['All', ...new Set(portfolio.map((item) => item.category))];
+const allTools = ['All', ...portfolio.map((item) => item.category)];
+const allProjectsTools = [...new Set(allTools.flat())];
 
 function PortfolioPageComponent() {
   const [projects, setProjects] = useState(portfolio);
-  const [categories] = useState(allCategories);
+  const [tools] = useState(allProjectsTools);
 
   const filter = (btn) => {
     if (btn === 'All') {
@@ -24,7 +25,7 @@ function PortfolioPageComponent() {
     <MainLayout>
       <Title title="Portfolio" span="Portfolio" />
       <InnerLayout>
-        <FilterButtons filterByCategory={filter} buttonsCategories={categories} />
+        <FilterButtons filterByCategory={filter} buttonsCategories={tools} />
         <PortfolioProjects projectsToDisplay={projects} />
       </InnerLayout>
     </MainLayout>
