@@ -4,6 +4,7 @@ import StorageIcon from '@mui/icons-material/Storage';
 import ScienceIcon from '@mui/icons-material/Science';
 import { InnerLayout, MainLayout } from '../../styles/Layouts';
 import Title from '../Title/Title';
+import resume from '../../data/Resume.pdf';
 import {
   AboutInfo,
   AboutInfoData,
@@ -105,7 +106,10 @@ function AboutPageComponent() {
                 </AboutInfoDataP>
               </AboutInfoData>
             </AboutInfo>
-            <DownloadCvButton>
+            <DownloadCvButton
+              href={resume}
+              download="currículo"
+            >
               Download CV
             </DownloadCvButton>
           </RightContent>
