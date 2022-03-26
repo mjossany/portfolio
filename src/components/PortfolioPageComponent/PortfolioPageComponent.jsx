@@ -18,7 +18,7 @@ function PortfolioPageComponent() {
       setProjects(portfolio);
       return;
     }
-    const filteredData = portfolio.filter((item) => item.category === btn);
+    const filteredData = portfolio.filter((item) => item.category.includes(btn));
     setProjects(filteredData);
   };
 
