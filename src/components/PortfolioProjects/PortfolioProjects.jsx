@@ -1,6 +1,6 @@
 import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { arrayOf } from 'prop-types';
+import { arrayOf, objectOf } from 'prop-types';
 import {
   GridItem,
   Icon,
@@ -21,7 +21,7 @@ function PortfolioProjects({ projectsToDisplay }) {
               <PortfolioImageContainer>
                 <Image src={project.image} alt="" />
                 <LinksUl>
-                  <Link href>
+                  <Link href=" ">
                     <Icon href={project.link1}>
                       <GitHubIcon />
                     </Icon>
@@ -43,7 +43,7 @@ function PortfolioProjects({ projectsToDisplay }) {
 }
 
 PortfolioProjects.propTypes = {
-  projectsToDisplay: arrayOf().isRequired,
+  projectsToDisplay: arrayOf(objectOf).isRequired,
 };
 
 export default PortfolioProjects;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { arrayOf, func } from 'prop-types';
+import { arrayOf, func, objectOf } from 'prop-types';
 import { Button, ButtonsContainer } from './Styled';
 
 function FilterButtons({ filterByCategory, buttonsCategories }) {
@@ -18,7 +18,7 @@ function FilterButtons({ filterByCategory, buttonsCategories }) {
 
 FilterButtons.propTypes = {
   filterByCategory: func.isRequired,
-  buttonsCategories: arrayOf().isRequired,
+  buttonsCategories: arrayOf(objectOf).isRequired,
 };
 
 export default FilterButtons;
