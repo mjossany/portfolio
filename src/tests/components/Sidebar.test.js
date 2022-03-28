@@ -1,12 +1,11 @@
 import React from 'react';
 import matchMediaPolyfill from 'mq-polyfill';
 import { act } from 'react-dom/test-utils';
+import userEvent from '@testing-library/user-event';
 import { render, screen } from '../../test-utils/testing-library-utils';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import resizeTo from '../resizeTo';
 import 'jest-styled-components';
-import App from '../../App';
-import userEvent from '@testing-library/user-event';
 
 matchMediaPolyfill(window);
 window.resizeTo = resizeTo;
