@@ -4,8 +4,9 @@ import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 import PortfolioProvider from '../context/portfolio';
 
+const history = createMemoryHistory();
+
 function AllTheProviders({ children }) {
-  const history = createMemoryHistory();
   return (
     <PortfolioProvider>
       <Router location={history.location} navigator={history}>
@@ -15,7 +16,7 @@ function AllTheProviders({ children }) {
   );
 }
 
-const renderWithContext = (ui, options) => render(ui, { wrapper: AllTheProviders, ...options });
+const renderWithContext = (ui, options) => ({ ...render(ui, { wrapper: AllTheProviders, ...options }), history});
 
 // re-export everything
 export * from '@testing-library/react';

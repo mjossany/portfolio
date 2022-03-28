@@ -1,6 +1,15 @@
 import React from 'react';
+import matchMediaPolyfill from 'mq-polyfill';
+import { act } from 'react-dom/test-utils';
 import { render, screen } from '../../test-utils/testing-library-utils';
 import Sidebar from '../../components/Sidebar/Sidebar';
+import resizeTo from '../resizeTo';
+import 'jest-styled-components';
+import App from '../../App';
+import userEvent from '@testing-library/user-event';
+
+matchMediaPolyfill(window);
+window.resizeTo = resizeTo;
 
 describe('Sidebar component tests', () => {
   it('Tests if the Sidebar renders all buttons', () => {
@@ -16,5 +25,29 @@ describe('Sidebar component tests', () => {
     render(<Sidebar />);
     const avatarImage = screen.getByRole('img');
     expect(avatarImage).toBeInTheDocument();
+  });
+
+  it('Tests if the Sidebar hides when the screen is smaller than 1200px and if it reappers if the screen is bigger than 1200px', async () => {
+    render(<Sidebar />);
+    const sidebarNav = screen.getByRole('navigation');
+    expect(sidebarNav.parentElement).toBeInTheDocument();
+
+    act(() => window.resizeTo(800, 800));
+
+    expect(sidebarNav.parentElement).toHaveStyleRule('transform', 'translateX(-100%)', { media: '(max-width:1200px)' });
+
+    act(() => window.resizeTo(1201, 800));
+
+    expect(sidebarNav.parentElement).toHaveStyleRule('transform', 'translateX(0)');
+  });
+
+  it('Tests if the page redirect correctly when the Sidebar links are clicked', async () => {
+    const { history } = render(<Sidebar />);
+    const sidebarLinks = screen.getAllByRole('link');
+    sidebarLinks.forEach((link) => {
+      const path = link.href.slice(16);
+      userEvent.click(link);
+      expect(history.location.pathname).toBe(path);
+    });
   });
 });
