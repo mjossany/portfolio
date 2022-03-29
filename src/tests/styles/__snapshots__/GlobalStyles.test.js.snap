@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GlobalStyle renders properly 1`] = `
+<head>
+  <style
+    data-styled="active"
+    data-styled-version="5.3.3"
+  />
+</head>
+`;
