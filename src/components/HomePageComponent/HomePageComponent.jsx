@@ -1,16 +1,13 @@
 import React from 'react';
-import Particles from 'react-tsparticles';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {
   HomePageContainer, PresentationContainer, H1, Span, P, Icons, Icon,
 } from './Styled';
-import particlesConfig from '../../helpers/particlesConfig';
 
 function HomePageComponent() {
   return (
     <HomePageContainer>
-      <Particles params={particlesConfig} />
       <PresentationContainer>
         <H1>
           {'Hi, I\'m '}

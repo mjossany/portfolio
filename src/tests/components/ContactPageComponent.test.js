@@ -5,7 +5,7 @@ import ContactPageComponent from '../../components/ContactPageComponent/ContactP
 describe('ContactPageComponent component tests', () => {
   it('Tests if the ContactPageComponent is rendered', () => {
     render(<ContactPageComponent />);
-    const contactPageH2 = screen.getByRole('headin', { level: 2 });
+    const contactPageH2 = screen.getByRole('heading', { level: 2 });
     expect(contactPageH2).toBeInTheDocument();
   });
 });
