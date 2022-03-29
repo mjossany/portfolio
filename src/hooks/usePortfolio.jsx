@@ -27,4 +27,4 @@ const usePortfolio = () => {
   };
 };
 
-export default usePortfolio;
+export default { usePortfolio };

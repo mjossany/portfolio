@@ -1,26 +1,13 @@
 import React, { createContext } from 'react';
 import { node } from 'prop-types';
-import usePortfolio from '../hooks/usePortfolio';
+import hook from '../hooks/usePortfolio';
 
 export const PortfolioContext = createContext({});
-
 function PortfolioProvider({ children }) {
-  const {
-    theme,
-    lightModeChecked,
-    navToggle,
-    setNavToggle,
-    themeToggler,
-  } = usePortfolio();
+  const context = hook.usePortfolio();
   return (
     <PortfolioContext.Provider
-      value={{
-        theme,
-        lightModeChecked,
-        navToggle,
-        setNavToggle,
-        themeToggler,
-      }}
+      value={context}
     >
       {children}
     </PortfolioContext.Provider>
