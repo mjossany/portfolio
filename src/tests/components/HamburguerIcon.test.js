@@ -8,6 +8,6 @@ describe('HamburguerIcon component tests', () => {
     render(<HamburguerIcon />);
     const hamburguerIconButton = screen.getByTestId('hamburguer-button');
     expect(hamburguerIconButton).toBeInTheDocument();
-    userEvent.click(hamburguerIconButton);``
+    userEvent.click(hamburguerIconButton);
   });
 });
