@@ -11,7 +11,7 @@ function HamburguerIcon() {
   } = useContext(PortfolioContext);
   return (
     <HamburguerIconContainer>
-      <IconButton onClick={() => setNavToggle(!navToggle)}>
+      <IconButton data-testid="hamburguer-button" onClick={() => setNavToggle(!navToggle)}>
         <MenuIcon className="hamburguer-menu" />
       </IconButton>
     </HamburguerIconContainer>
