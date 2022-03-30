@@ -4,10 +4,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {
   HomePageContainer, PresentationContainer, H1, Span, P, Icons, Icon,
 } from './Styled';
+import ParticleBackground from '../ParticleBackground/ParticleBackground';
 
 function HomePageComponent() {
   return (
     <HomePageContainer>
+      <ParticleBackground />
       <PresentationContainer>
         <H1>
           {'Hi, I\'m '}
