@@ -193,6 +193,21 @@ function ResumePageComponent() {
                       </RightContentH6>
                     </ResumeItemRightContent>
                   </ResumeItem>
+                  <ResumeItem>
+                    <ResumeItemLeftContent>
+                      <LeftContentP>
+                        2017 - 2022
+                      </LeftContentP>
+                    </ResumeItemLeftContent>
+                    <ResumeItemRightContent>
+                      <RightContentH5>
+                        Treasury Analyst
+                      </RightContentH5>
+                      <RightContentH6>
+                        Tottal Services
+                      </RightContentH6>
+                    </ResumeItemRightContent>
+                  </ResumeItem>
                 </ResumeContent>
               </Resume>
               <Education>
