@@ -1,0 +1,11 @@
+FROM node:14 as portfolio-build
+WORKDIR /app
+COPY package.json .
+RUN npm install
+COPY . .
+ARG REACT_APP_NAME
+ENV REACT_APP_NAME=$REACT_APP_NAME
+RUN npm run build
+
+FROM nginx
+COPY --from=portfolio-build /app/build /usr/share/nginx/html
