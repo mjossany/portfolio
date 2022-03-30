@@ -28,7 +28,7 @@ function HomePageComponent() {
           <Icon href="https://www.linkedin.com/in/jossanymoura/">
             <LinkedInIcon />
           </Icon>
-          {`Hello, ${process.env.REACT_APP_NAME}`}
+          {`Hello, ${process.env.REACT_APP_NAME} Moura`}
         </Icons>
       </PresentationContainer>
     </HomePageContainer>
