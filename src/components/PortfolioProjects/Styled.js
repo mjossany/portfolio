@@ -26,16 +26,12 @@ export const PortfolioImageContainer = styled.div`
   &::before {
     content: "";
     position: absolute;
-    left: 2%;
-    top: 2%;
-    height: 0;
-    width: 0;
     transition: all .4s ease-in-out;
   }
   &:hover {
     ul {
       transform: translateY(0);
-      transform: translate(-52%, -70%);
+      transform: translate(-50%, -50%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -43,8 +39,8 @@ export const PortfolioImageContainer = styled.div`
       opacity: 1;
     }
     &::before {
-      height: calc(100% - 33.8%);
-      width: calc(100% - 4.2%);
+      height: 30vh;
+      width: 100%;
       background-color: white;
       opacity: 0.9;
       transform-origin: left;
@@ -80,6 +76,9 @@ export const Link = styled.li`
   border-radius: 50%;
   margin: 0 .5rem;
   transition: all .4s ease-in-out;
+  svg {
+      color: var(--white-color);
+    }
   &:hover {
     background-color: var(--primary-color);
     svg {
