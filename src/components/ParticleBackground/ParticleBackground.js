@@ -7,6 +7,8 @@ function ParticleBackground() {
       <Particles 
         options={{
           "particles": {
+            "fullScreen": { "enable": true, "zIndex": 0 },
+            "fpsLimit": 120,
             "number": {
               "value": 80,
               "limit": 200,
@@ -62,7 +64,7 @@ function ParticleBackground() {
             },
             "move": {
               "enable": true,
-              "speed": 5,
+              "speed": 3,
               "direction": "none",
               "random": false,
               "straight": false,

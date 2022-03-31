@@ -6,6 +6,7 @@ export const MainContentContainer = styled.main`
   min-height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
+  overflow-y: hidden;
   @media screen and (max-width: 1200px) {
     margin-left: 0;
   }
