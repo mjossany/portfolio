@@ -41,7 +41,7 @@ export const TitleH2 = styled.h2`
 
 export const TitleSpan = styled.span`
   font-weight: 500;
-  color: rgba(25, 29, 43, .44);
+  color: var(--title-span-color);
   font-size: 3.5rem;
   position: absolute;
   left: 0;
