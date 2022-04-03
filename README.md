@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my <a href="https://jossany-portfolio-dev.herokuapp.com/">Portfolio</a>! It's a space that I created to share more about me, my skills and my projects. I hope you enjoy it! 😬
 
-## Available Scripts
+## Technologies
 
-In the project directory, you can run:
+- JavaScript
+- React
+- Styled Components
+- React Router Dom
+- Jest
 
-### `npm start`
+## Instructions to start locally
 
-Runs the app in the development mode.\
+To facilitate the local deploy, we suggest using *Docker* and *Docker-compose*.
+
+#### ⚠️ If you don't have Docker and Docker Compose installed:
+
+- Check out the documentation and follow all the steps at [Docker documentation](https://docs.docker.com/engine/install/) and [Docker Compose documentation](https://docs.docker.com/compose/install/).
+
+After installing both, run the following command in the project root:
+
+`docker-compose -f docker-compose.yml -f docker-compose-dev.yml up -d --build`
+
+This command runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## Tests
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project has 100% unit tests coverage using jest and testing library.
 
-### `npm run build`
+To run tests locally use the command `npm test` and to verify the tests coverage run `npm run coverage`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Next Improvements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- A backend to keep the projects of the portfolio and the blog posts;
+- Improve the filtering options on the portfolio page;
+- Modify the layout to give mobile users a more intuitive user interface;
+- Give the user the option to translate the Portfolio to portuguese;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deploy
 
-### `npm run eject`
+I chose [Heroku](https://www.heroku.com/) because it allows free deploy of personal projects and preserves the original routes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<h1><a href="https://jossany-portfolio-dev.herokuapp.com/"> Visit my Portfolio</a></h1>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
