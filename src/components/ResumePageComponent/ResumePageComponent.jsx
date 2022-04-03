@@ -37,7 +37,7 @@ function ResumePageComponent() {
     <MainLayout>
       <ResumePageContainer>
         <SkillsSection>
-          <Title title="My Skills" span="My Skills" />
+          {/* <Title title="My Skills" span="My Skills" />
           <InnerLayout>
             <Skills>
               <ProgressBar>
@@ -145,7 +145,7 @@ function ResumePageComponent() {
                 </ProgressBarInfos>
               </ProgressBar>
             </Skills>
-          </InnerLayout>
+          </InnerLayout> */}
         </SkillsSection>
         <ResumeSection>
           <Title title="Resume" span="Resume" />
