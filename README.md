@@ -7,6 +7,7 @@ Welcome to my <a href="https://jossany-portfolio-dev.herokuapp.com/">Portfolio</
 - JavaScript
 - React
 - Styled Components
+- React Router Dom
 - Jest
 
 ## Instructions to start locally
