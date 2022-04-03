@@ -34,6 +34,13 @@ This project has 100% unit tests coverage using jest and testing library.
 
 To run tests locally use the command `npm test` and to verify the tests coverage run `npm run coverage`.
 
+## Next Steps
+
+- A backend to keep the projects of the portfolio and the blog posts;
+- Improve the filtering options on the portfolio page;
+- Modify the layout to give mobile users a more intuitive user interface;
+- And give the user the option to translate the Portfolio to portuguese;
+
 ## Deploy
 
 I chose [Heroku](https://www.heroku.com/) because it allows free deploy of personal projects and preserves the original routes.
